@@ -2,14 +2,37 @@
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Дайджест 2026-09-26</title><style>
-:root { --accent: #e74c3c; --bg: #fdfdfb; --fg: #1a1a2e; --muted: #6b7280; }
+:root { --accent: #e74c3c; --bg: #fdfdfb; --fg: #1a1a2e; --muted: #6b7280; --card: #ffffff; }
 * { box-sizing: border-box; }
 body { font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; line-height: 1.7;
-       max-width: 880px; margin: 0 auto; padding: 28px 18px 80px; color: var(--fg); background: var(--bg); }
+       max-width: 960px; margin: 0 auto; padding: 28px 18px 80px; color: var(--fg); background: var(--bg); }
 header.site { border-bottom: 3px solid var(--accent); padding-bottom: 14px; margin-bottom: 28px; }
 header.site h1 { margin: 0; font-size: 1.7em; }
 header.site h1 a { color: var(--fg); text-decoration: none; }
 header.site .sub { color: var(--muted); font-size: .95em; margin-top: 4px; }
+
+/* ── Карточки на главной ── */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+         gap: 18px; margin-top: 8px; }
+.card { display: flex; flex-direction: column; background: var(--card);
+        border: 1px solid #e5e2dd; border-radius: 12px; padding: 18px;
+        text-decoration: none; color: var(--fg);
+        transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,.08);
+              border-color: var(--accent); }
+.card .date { font-size: 1.15em; font-weight: 700; color: var(--accent); margin-bottom: 6px; }
+.card .title { font-weight: 600; margin-bottom: 8px; line-height: 1.4; }
+.card .snippet { color: var(--muted); font-size: .88em; line-height: 1.55;
+                 display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;
+                 overflow: hidden; margin-bottom: 12px; flex-grow: 1; }
+.card .meta { display: flex; gap: 10px; font-size: .8em; color: var(--muted);
+              border-top: 1px dashed #e5e2dd; padding-top: 10px; }
+.card .meta .pill { background: #f5f0eb; border-radius: 20px; padding: 2px 10px; }
+.card.latest { border-color: var(--accent); box-shadow: 0 4px 14px rgba(231,76,60,.12); }
+.card.latest .date::after { content: " — свежий"; font-size: .75em; font-weight: 400;
+                            color: var(--muted); }
+
+/* ── Страница дайджеста ── */
 h2 { font-size: 1.3em; margin-top: 1.8em; color: #2c3e50;
      border-left: 4px solid var(--accent); padding-left: 10px; }
 h3 { font-size: 1.08em; color: #34495e; margin-top: 1.4em; }
@@ -21,15 +44,14 @@ blockquote { margin: 12px 0; padding: 8px 16px; background: #f8f5f0;
 a { color: #c0392b; }
 hr { border: none; border-top: 1px solid #e0ddd8; margin: 28px 0; }
 code { background: #f0ede8; padding: 1px 5px; border-radius: 3px; font-size: .9em; }
-nav.archive ul { list-style: none; padding: 0; }
-nav.archive li { padding: 6px 0; border-bottom: 1px dashed #e5e2dd; }
+.backlink { display: inline-block; margin-bottom: 18px; color: var(--muted); }
 footer.site { margin-top: 48px; color: var(--muted); font-size: .85em; }
 </style></head><body>
 <header class="site">
   <h1><a href="/">📋 SEO-дайджест Reddit</a></h1>
   <div class="sub">Ежедневное саммари r/SEO · r/bigseo · r/juststart · r/TechSEO · r/localseo и др.</div>
 </header>
-<main><h1>📋 Дайджест SEO-сабреддитов: r/SEO, r/bigseo, r/juststart, r/SEO_Digital_Marketing, r/TechSEO, r/localseo</h1>
+<main><a class="backlink" href="../">← Все дайджесты</a><h1>📋 Дайджест SEO-сабреддитов: r/SEO, r/bigseo, r/juststart, r/SEO_Digital_Marketing, r/TechSEO, r/localseo</h1>
 <p><strong>Дата:</strong> 2026-09-26 21:44<br />
 <strong>Постов:</strong> 60</p>
 <hr />
@@ -218,6 +240,5 @@ footer.site { margin-top: 48px; color: var(--muted); font-size: .85em; }
 <li><strong>Уберите DA из отчётов по локальным клиентам.</strong> Для сравнения локальных сайтов метрика ненадёжна — ищите альтернативы (<a href="https://www.reddit.com/r/localseo/comments/1wpu4zr/virtual_office_spaces/">тред</a>).</li>
 <li><strong>Для локального SEO — готовьтесь к турбулентности заранее.</strong> Кейсы потери клиентов и обвалов рейтингов за дни показывают: диверсификация каналов лидогенерации и регулярный мониторинг GBP — не опция, а необходимость (<a href="https://www.reddit.com/r/localseo/comments/1wpxoak/local_seo_guy_here_lost_most_of_my_clients_after/">тред</a>).</li>
 </ol></main>
-
-<footer class="site">Автогенерируется парсером Reddit + LLM · 2026-09-28 07:23</footer>
+<footer class="site">Автогенерируется парсером Reddit + LLM · 2026-09-28 07:27</footer>
 </body></html>
