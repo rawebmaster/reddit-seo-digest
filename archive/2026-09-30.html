@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Дайджест 2026-09-30</title><style>
+:root { --accent: #e74c3c; --bg: #fdfdfb; --fg: #1a1a2e; --muted: #6b7280; --card: #ffffff; }
+* { box-sizing: border-box; }
+body { font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; line-height: 1.7;
+       max-width: 960px; margin: 0 auto; padding: 28px 18px 80px; color: var(--fg); background: var(--bg); }
+header.site { border-bottom: 3px solid var(--accent); padding-bottom: 14px; margin-bottom: 28px; }
+header.site h1 { margin: 0; font-size: 1.7em; }
+header.site h1 a { color: var(--fg); text-decoration: none; }
+header.site .sub { color: var(--muted); font-size: .95em; margin-top: 4px; }
+
+/* ── Карточки на главной ── */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+         gap: 18px; margin-top: 8px; }
+.card { display: flex; flex-direction: column; background: var(--card);
+        border: 1px solid #e5e2dd; border-radius: 12px; padding: 18px;
+        text-decoration: none; color: var(--fg);
+        transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,.08);
+              border-color: var(--accent); }
+.card .date { font-size: 1.15em; font-weight: 700; color: var(--accent); margin-bottom: 6px; }
+.card .title { font-weight: 600; margin-bottom: 8px; line-height: 1.4; }
+.card .snippet { color: var(--muted); font-size: .88em; line-height: 1.55;
+                 display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;
+                 overflow: hidden; margin-bottom: 12px; flex-grow: 1; }
+.card .meta { display: flex; gap: 10px; font-size: .8em; color: var(--muted);
+              border-top: 1px dashed #e5e2dd; padding-top: 10px; }
+.card .meta .pill { background: #f5f0eb; border-radius: 20px; padding: 2px 10px; }
+.card.latest { border-color: var(--accent); box-shadow: 0 4px 14px rgba(231,76,60,.12); }
+.card.latest .date::after { content: " — свежий"; font-size: .75em; font-weight: 400;
+                            color: var(--muted); }
+
+/* ── Страница дайджеста ── */
+h2 { font-size: 1.3em; margin-top: 1.8em; color: #2c3e50;
+     border-left: 4px solid var(--accent); padding-left: 10px; }
+h3 { font-size: 1.08em; color: #34495e; margin-top: 1.4em; }
+table { border-collapse: collapse; width: 100%; font-size: .92em; margin: 12px 0; }
+th, td { border: 1px solid #ddd; padding: 7px 10px; text-align: left; vertical-align: top; }
+th { background: #f5f0eb; }
+blockquote { margin: 12px 0; padding: 8px 16px; background: #f8f5f0;
+             border-left: 4px solid #d4a017; font-style: italic; }
+a { color: #c0392b; }
+hr { border: none; border-top: 1px solid #e0ddd8; margin: 28px 0; }
+code { background: #f0ede8; padding: 1px 5px; border-radius: 3px; font-size: .9em; }
+.backlink { display: inline-block; margin-bottom: 18px; color: var(--muted); }
+footer.site { margin-top: 48px; color: var(--muted); font-size: .85em; }
+</style></head><body>
+<header class="site">
+  <h1><a href="/">📋 SEO-дайджест Reddit</a></h1>
+  <div class="sub">Ежедневное саммари r/SEO · r/bigseo · r/juststart · r/TechSEO · r/localseo и др.</div>
+</header>
+<main><a class="backlink" href="../">← Все дайджесты</a><h1>📋 Дайджест SEO-сабреддитов: r/SEO, r/bigseo, r/juststart, r/SEO_Digital_Marketing, r/TechSEO, r/localseo</h1>
+<p><strong>Дата:</strong> 2026-09-30 07:47<br />
+<strong>Постов:</strong> 60</p>
+<hr />
+<h2>📊 Обзор</h2>
+<p>Проанализировано <strong>~60 постов</strong> из шести сабреддитов: r/SEO, r/bigseo, r/juststart, r/SEO_Digital_Marketing, r/TechSEO, r/localseo. Основной фон недели — <strong>сентябрьский spam-апдейт Google 2026</strong>, который сообщество уже воспринимает как рутину («ждите такие каждый месяц»), и <strong>стремительная перестройка поиска под AI</strong>: ChatGPT резко урезал цитирование крупных доменов, Google запустил Web Monitoring в AI Mode, а технари обнаруживают разрыв между тем, что видит Googlebot, и что получают ИИ-краулеры. Параллельно r/juststart переживает кризис идентичности (AI-спам против «старой школы» аффилиатных сайтов), в r/localseo — практические кейсы GBP-категорий и NAP-конфликтов, а в r/bigseo и r/TechSEO — классические технические боли: soft 404, canonical-войны www/non-www и индексация в Bing. Заметная проблема инфраструктуры: авто-модерация Reddit (CQS) удалила комментарии в нескольких тредах, оставив ценные кейсы (например, потерю 95% трафика) без ответов.</p>
+<hr />
+<h2>🔥 Ключевые темы и проблемы</h2>
+<h3>1. Сентябрьский spam-апдейт Google 2026: ежемесячная норма и первые жертвы</h3>
+<p><strong>Почему важно:</strong> апдейт совпал с резкими падениями трафика, и сообщество пытается понять — это фильтр за scaled content, перекраулинг или что-то иное. Ставки высоки: у пострадавших под ударом весь органический канал.</p>
+<p><strong>Тред: анонс апдейта</strong> — <code>r/SEO</code> + <a href="https://www.reddit.com/r/SEO/comments/1wp6ml7/google_search_central_on_x_today_we_released_the/">Google Search Central on X: "Today we released the September 2026 spam update"</a><br />
+- <strong>Суть:</strong> Google официально откатил сентябрьский spam update; автор поста прогнозирует, что основной удар придётся по Scaled Content Abuse (pSEO).<br />
+- <strong>Решения:</strong> WebLinkr (score 1) сослался на заявление Джона Мюллера о том, что <strong>этот апдейт будет откатываться дольше обычного</strong> (<a href="https://www.seroundtable.com/google-september-2026-spam-update-42163.html">Seroundtable</a>). PDFBearSupport (score 14) резюмировал настроение сообщества: «We can just expect these to roll out EVERY month now» — апдейты становятся ежемесячной рутиной, а не событием.</p>
+<p><strong>Тред: потеря 95% трафика за один день</strong> — <code>r/SEO</code> + <a href="https://www.reddit.com/r/SEO/comments/1wtnj5t/sudden_95_google_search_traffic_loss_in_1_day/">Sudden ~95% Google Search traffic loss in 1 day during the September 2026 spam update</a><br />
+- <strong>Суть:</strong> некоммерческий агрегатор классических концертов в Мадриде (без партнёрок, без продаж) потерял ~95% видимости overnight с 27 сентября, сразу после старта апдейта. Все технические проверки в норме: robots.txt открыт, noindex отсутствует, canonicals самоссылающиеся, HTTPS, sitemap корректен. PostHog подтверждает, что это не артефакт GSC — падение ситевое и только по Google-каналу.<br />
+- <strong>Решения:</strong> содержательной помощи нет — комментарий удалён AutoModerator из-за низкого CQS-скора автора. Кейс остался висеть без разбора, что само по себе показательно.</p>
+<p><strong>Тред: пострадавшие от июньского апдейта</strong> — <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1wt7639/anyone_hit_by_the_june_spam_update_seeing_changes/">Anyone hit by the June spam update seeing changes during the September update?</a><br />
+- <strong>Суть:</strong> автор, чей сайт пострадал от июньского спам-апдейта, собирает опыт тех, кто видит движения во время сентябрьского роллаута — восстановился ли кто-то и что именно делал между апдейтами.<br />
+- <strong>Решения:</strong> gloomyheadcount3532 (score 2) отчитался о <strong>+15% трафика после удаления старых гостевых постов 2022 года и чистки thin-страниц</strong>, но до докризисного уровня ещё далеко; заметил, что страницы полезли вверх ещё до анонса сентябрьского апдейта. Little-Drive-1194 (score 1) дал трезвое объяснение: рост до анонса — это, скорее всего, Google перезкраулирует вычищенный контент, а не действие апдейта; «ситевые сигналы догоняют не сразу». Civil-Respect-7015 (score 0) поделился контрпримером: они поставили слабые страницы на noindex (не удаляли) — улучшения нет; и поднял тревожный вопрос — скачок статуса «Indexed, though blocked by robots.txt» со 100 до 10–12k URL в мае-июне.</p>
+<p><strong>Тред: пересказ анонса через Gemini</strong> — <code>r/SEO_Digital_Marketing</code> + <a href="https://www.reddit.com/r/SEO_Digital_Marketing/comments/1wp6oe6/google_september_2026_spam_update_is_rolling_out/">Google September 2026 Spam Update Is Rolling Out</a><br />
+- <strong>Суть:</strong> пост с Gemini-генерированным обзором апдейта, включая утверждение, что апдейт «не таргетит линк-спам».<br />
+- <strong>Решения:</strong> charlesnobleseo (score 3) разоблачил неточность: <strong>«does not target link spam» — это инференс Gemini, а не заявление Google</strong>; SpamBrain с самого начала таргетил линк-спам, и отсутствие «жертвы» в анонсе не равно исключению. Его практический совет по двухнедельному окну: аннотируйте дату, дождитесь уведомления о завершении, затем сравнивайте по типам страниц и интентам запросов — «многое, что выглядит как попадание в середине роллаута, оседает само». WebLinkr (score 1) добавил видео-материал по Scaled Content + pSEO.</p>
+<hr />
+<h3>2. AI-поиск перестраивает выдачу и цитирование</h3>
+<p><strong>Почему важно:</strong> меняется не алгоритм, а сама механика «кто попадает в ответ». Видимость растёт, конверсии — нет, а источники цитирования ИИ пересобираются буквально помесячно.</p>
+<p><strong>Тред: ChatGPT перестал цитировать YouTube</strong> — <code>r/SEO</code> + <a href="https://www.reddit.com/r/SEO/comments/1wqg2d8/chatgpt_stopped_citing_youtube_in_september/">ChatGPT stopped Citing YouTube in September</a><br />
+- <strong>Суть:</strong> по данным автора, YouTube потерял <strong>91% доли цитирований в ChatGPT</strong> по сравнению с августом; рядом facebook −88.1%, wikipedia −78.4%, forbes −71.7%. Гипотеза: ChatGPT уходит от Google как основного «индекса качества». Ключевой тезис поста — «Retrieved ≠ Cited»: страница может извлекаться, но не попадать в цитаты.<br />
+- <strong>Решения:</strong> Insightfulvoice (score 7) дал самую взвешенную реакцию: AI-поиск меняется так быстро, что невозможно отличить структурный сдвиг от временного колебания — нужно наблюдать, а не перестраивать стратегию на одной точке данных. PDFBearSupport (score 13) выразил обратную эмоцию части сообщества: «Nice. No more YouTube or Reddit. Thank God» — меньше UGC-доменов в цитатах.</p>
+<p><strong>Тред: «SEO/GEO/AEO — это уже театр?»</strong> — <code>r/SEO</code> + <a href="https://www.reddit.com/r/SEO/comments/1wtlwgk/dae_feel_like_seogeoaeo_is_slowly_just_becoming/">DAE feel like SEO/GEO/AEO is slowly just becoming theatrics at this point?</a><br />
+- <strong>Суть:</strong> специалист с 15-летним стажем жалуется: видимость клиентов в AI-ответах и SERP растёт, а конверсии около нуля. Приходится продавать клиенту «я на странице 1 и в AIO — работа сделана», иначе потеряешь контракт, хотя честный ответ («конверсий из AIO нет») означает увольнение.<br />
+- <strong>Решения:</strong> SerbianContent (score 3) дал контраргумент с рынка: AI-хайп привёл в SEO клиентов, которые раньше им не интересовались — «работы больше, чем когда-либо, записан на 6 месяцев вперёд». sharyphil (score 2) уточнил паттерн: технически подкованные клиенты приходят с ожиданием «лёгких денег» от AI-видимости — управлять этими ожиданиями становится отдельной работой.</p>
+<p><strong>Тред: Web Monitoring в AI Mode</strong> — <code>r/SEO</code> + <a href="https://www.reddit.com/r/SEO/comments/1wt06ne/google_now_rolling_out_web_monitoring_feature_in/">Google now rolling out Web Monitoring feature in AI Mode</a><br />
+- <strong>Суть:</strong> Google выкатил Web Monitoring в AI Mode: пользователь подписывается на тему, и AI Mode присылает push-уведомления об обновлениях. Автор поста видит в этом «новый разблокированный маркетинговый канал» — бренды уже просят подписываться на их обновления.<br />
+- <strong>Решения:</strong> Lucker_Noob (score 21, топ-комментарий треда) свёл инновацию к базе: «Isn't that just a fancy name for an RSS feed?» — и тред с ним согласился (pupunoob, score 4: «yup»). Вывод для практиков: канал может быть реальным, но механика — старая как мир подписка на фид.</p>
+<p><strong>Тред: AI Overviews в локальном поиске</strong> — <code>r/localseo</code> + <a href="https://www.reddit.com/r/localseo/comments/1wtm4a4/ai_overviews_show_up_on_75_of_specific_local/">AI Overviews show up on 75% of specific local searches — but only 4% of "near me" searches</a><br />
+- <strong>Суть:</strong> исследование Synup (53 900 локальных SERP, 250 городов США): появление AI Overview почти полностью определяется <strong>формулировкой запроса</strong> — «[категория] near me» → 4%, «best [категория] in [город]» + конкретная потребность → 75.4%. Map pack при этом стабилен (91–97% страниц). Из 8 540 разобранных AIO 45–61% цитирований указывают на сайты бизнесов и GBP; google.com — самый цитируемый домен (13 777 раз), Reddit — лишь 4–6%.<br />
+- <strong>Решения:</strong> автор поста формулирует практический вывод: порядок аудита — <strong>сначала сайт, потом GBP</strong>, потому что именно их читает AI; и обязательно проверять категорию — у home builders AIO появляется на 80% «best»-запросов, у ресторанов лишь на 1.2%.</p>
+<hr />
+<h3>3. Local SEO и GBP: категории, названия, адреса</h3>
+<p><strong>Почему важно:</strong> в local SEO ошибки конфигурации (категории, NAP, названия) бьют по единственному каналу лидогенерации, а откаты Google (деактивация профиля) могут стоить месяцев.</p>
+<p><strong>Тред: категории GBP «путают» Google</strong> — <code>r/localseo</code> + <a href="https://www.reddit.com/r/localseo/comments/1wsv0dr/gbp_categories_selection_is_confusing_google_as/">GBP categories selection is confusing Google as to who we are</a><br />
+- <strong>Суть:</strong> фаст-кэжуал ресторан с широким меню добавил 4 вторичные категории (салаты, бургеры, гирос, вегетарианское) — и стал проседать по «restaurant near me», зато чаще появляться в выдаче по брендовым запросам конкурентов, без кликов.<br />
+- <strong>Решения:</strong> keyworddotcom (score 4) дал диагноз — <strong>«category dilution»</strong>: добавив «Salad Shop» и «Vegetarian Restaurant», вы заставляете Google сравнивать вас с настоящими салатными и вегетарианскими ресторанами, и вы проигрываете эти сравнения. Рецепт: вернуть первичную категорию + максимум одну честную вторичную, а ассортимент пусть «рассказывают» меню, отзывы и контент сайта — Google тяжело читает текст отзывов. Reasonable-Click-144 (score 1) подтвердил: «category dilution объясняет весь этот странный competitor-overlap».</p>
+<p><strong>Тред: добавлять ли [город] к названиям 8 GBP-профилей</strong> — <code>r/localseo</code> + <a href="https://www.reddit.com/r/localseo/comments/1wsr2uz/adding_city_name_to_multiple_gbp_locations/">Adding [City Name] to Multiple GBP Locations?</a><br />
+- <strong>Суть:</strong> автор держит 8 профилей с официальными названиями без города, зная о рисках (пример знакомого: кейворд в названии сняли в течение часа и не вернули месяц). Основная локация и так ранжируется выше конкурентов с городом в названии.<br />
+- <strong>Решения:</strong> manzanitamktg (score 1) привёл пугающий кейс: у клиента Google принял обновление адреса, но <strong>деактивировал профиль</strong>, потому что листинг не совпал с корпоративным названием (не хватало «LLC»). Вывод: «лучше профиль с упущенной оптимизацией, чем профиль offline, пока ты воюешь с саппортом».</p>
+<p><strong>Тред: SAB с лицензией в другом штате</strong> — <code>r/localseo</code> + <a href="https://www.reddit.com/r/localseo/comments/1wtm9sv/service_area_business_licenselegal_address_are/">Service area business - license/legal address are different state than client works</a><br />
+- <strong>Суть:</strong> у клиента лицензия и HQ в Вайоминге, работает он в Неваде. Дилемма: адрес в Неваде не совпадёт с NAP на сайте и лицензионном сайте; адрес в Вайоминге не привяжет бизнес к сервисной зоне Невады.<br />
+- <strong>Решения:</strong> чистого решения сообщество не нашло. itspixelish (-1) предложил виртуальный адрес, но 32ozDClightice (score 1) объяснил ограничение: сайт обязан совпадать с лицензионным сайтом, значит придётся показывать Вайоминг — тупик без обхода.</p>
+<p><strong>Тред: Brightlocal Citation Builder — масштабирование</strong> — <code>r/localseo</code> + <a href="https://www.reddit.com/r/localseo/comments/1wslyx0/brightlocal_citation_builder/">Brightlocal Citation Builder</a><br />
+- <strong>Суть:</strong> автор завершил первую кампанию на 15 цитирований и спрашивает: можно ли стартовать вторую до полного завершения первой и прыгнуть сразу на 50.<br />
+- <strong>Решения:</strong> AlexSTL1 (score 1): <strong>консистентность важнее объёма</strong> — вторую кампанию стартовать можно, если NAP идентичен; сначала проверьте, что первые 15 вышли и совпадают с профилем Google, и почистите старые листинги с неверным телефоном/адресом; приоритет — нишевые и гео-каталоги, «длинный хвост добавляет очень мало». cswebsolutions (score 1) добавил: аудит существующих листингов (точность, индексация, дубликаты) до наращивания; «больше цитирований ≠ больше ранков».</p>
+<p><strong>Тред: «почему меня не рекомендуют в локалке»</strong> — <code>r/localseo</code> + <a href="https://www.reddit.com/r/localseo/comments/1wthdo3/whats_best_way_i_can_get_recommended_in_local/">What's best way I can get recommended in local searches?</a><br />
+- <strong>Суть:</strong> GBP оптимизирован, статьи с городскими ключами написаны — результатов нет; автор ищет «эксперта».<br />
+- <strong>Решения:</strong> IsabelaGalapagos (score 1) задала единственно правильный диагностический вопрос: <strong>сколько отзывов и когда был последний?</strong> (у автора 32 отзыва, последний — вчера, т.е. база есть, но её мало для конкурентной ниши).</p>
+<hr />
+<h3>4. Индексация и канонизация: Bing, www/non-www, 410, sitemap</h3>
+<p><strong>Почему важно:</strong> это «тихие» проблемы, которые не видны в дашбордах, но съедают трафик неделями — и почти всегда решаются проверкой базовых сигналов, а не магией.</p>
+<p><strong>Тред: Google выбирает www как canonical</strong> — <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1ws33mn/google_choosing_www_version_as_canonical_and_isnt/">Google Choosing www version as canonical and isn't indexing the new non-www</a><br />
+- <strong>Суть:</strong> после переезда клиента с www на non-www настроен 301, но Google продолжает индексировать 4 страницы www-версии и не индексирует non-www.<br />
+- <strong>Решения:</strong> Ill-Confidence314 (score 3) посоветовал добавить non-www property в Search Console, выставить preferred domain и попробовать Change of Address. Little-Drive-1194 (score 2) внёс важную поправку: <strong>preferred domain убрали из GSC годы назад, а Change of Address не работает для www→non-www</strong> — остаётся следить, чтобы canonicals и sitemap совпадали с редиректом, и ждать.</p>
+<p><strong>Тред: индексирован в Google, но не в Bing</strong> — <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1wmc1xc/indexed_in_google_but_not_in_bing/">Indexed in Google but not in Bing</a><br />
+- <strong>Суть:</strong> новый сайт получает показы в Google, но Bing держит его в статусе «Discovered but not crawled»; ручной запрос индексации, ресабмит sitemap и пересоздание сайта в панели не помогли.<br />
+- <strong>Решения:</strong> G-WEB_GROUP (score 3): Bing разборчивее — вероятен слабый ссылочный профиль; усилить внутреннюю перелинковку с индексируемых страниц, добавить качественные внешние ссылки, проверить thin-титлы. jsephdurmus (score 2) дал неочевидный лайфхак: <strong>написать в Bing Webmaster Support напрямую — они правят вручную и даже могут выставить кастомный title</strong>. rpmeg (score 2) отрезал: у Google ~95% доли — не тратьте непропорционально много времени на Bing.</p>
+<p><strong>Тред: 410 vs 301 для старых news/event страниц после миграции</strong> — <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1wjqn5t/retiring_old_news_and_event_pages_after_a_site/">Retiring old news and event pages after a site migration</a><br />
+- <strong>Суть:</strong> после миграции автор закрыл тысячи устаревших страниц через 410 (считая, что массовые 301 на общие категории получат soft-404 флаг). GSC показывает тысячи «not found», валидация не двигается, трафик проседает.<br />
+- <strong>Решения:</strong> SEOPub (score 1) дал чёткое правило: <strong>есть внешние ссылки → 301 на ближайшую релевантную страницу; нет ссылок → 410 без сомнений</strong>. yy633013 (score 1) предложил третью опцию: если старые страницы ранятся и дают трафик — не удалять, а поставить наверху блок с CTA на новый контент и конверсии, «перераспределив» трафик. Spurtboy (score 1) согласился: только позиция #1 — причина не ставить 410 при наличии ссылок.</p>
+<p><strong>Тред: Webflow отдаёт sitemap с неправильным content-type</strong> — <code>r/TechSEO</code> + <a href="https://www.reddit.com/r/TechSEO/comments/1wt7x5f/i_cant_register_sitemapxml_in_google_search/">I can't register sitemap.xml in Google Search console because wrong content-type</a><br />
+- <strong>Суть:</strong> Webflow отдаёт sitemap.xml как <code>application/rss+xml</code>, из-за чего GSC отказывается его принимать; поддержка Webflow проблему не чинит.<br />
+- <strong>Решения:</strong> SassyDistributor397 (score 1): это известная болячка Webflow; рабочий обход — <strong>reverse proxy или Cloudflare Worker, переписывающий заголовок до того, как его увидит Google</strong>. Автор подтвердил, что саппорт тупиковый, так что инфраструктурный обход — единственный путь.</p>
+<p><strong>Тред: языковые версии индексируются «не те»</strong> — <code>r/SEO</code> + <a href="https://www.reddit.com/r/SEO/comments/1wteeyv/google_indexes_my_apps_french_version_when_i/">Google indexes my app's French version when I search from Germany</a><br />
+- <strong>Суть:</strong> автор мультиязычного приложения (elo-рейтинги футболистов) видит в GSC позицию 2 по «real madrid elo», но при ручном поиске из Германии сайта нет; AI Overview цитирует французскую и китайскую версии страницы вместо релевантных локалей.<br />
+- <strong>Решения:</strong> larkmiller14 (score 3): проверить hreflang, canonical и внутреннюю перелинковку/индексацию каждой языковой версии; для AI-суммари — сравнить, какие именно языковые страницы имеют самые чёткие entity/контекстные сигналы. Xtrusio (score 1) объяснил «парадокс позиции 2»: <strong>GSC показывает среднее по зафиксированным показам, а не гарантию для каждого ручного поиска</strong> — фильтруйте Performance по запросу, странице, стране и устройству; 1 клик и 3 показа — раннее наблюдение, а не стабильный ранг.</p>
+<p><strong>Тред: массовая проверка индексации сотен URL</strong> — <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1wjkjgw/whats_the_best_way_to_check_google_indexing/">What's the best way to check Google indexing status for a large list of URLs?</a><br />
+- <strong>Суть:</strong> нужно проверить индексацию нескольких сотен URL с чужих доменов и получить CSV вида «URL | Indexed | Not Indexed | Check Date».<br />
+- <strong>Решения:</strong> Full-Hunter6584 (score 3): Screaming Frog API + кастомный скрипт, но кросс-доменно это боль; для сотен URL — батчи через headless browser с ротацией прокси, site:-запросы «шумят» на похожих URL. Little-Drive-1194 (score 1): <strong>именно rate limit убивает bulk-чекеры</strong> — на 20 URL всё работает, потом таймауты; для нескольких сотен может хватить батчинга с задержкой без прокси.</p>
+<hr />
+<h3>5. Рендеринг и ИИ-краулеры: что реально видит машина</h3>
+<p><strong>Почему важно:</strong> формируется новая техническая дисциплина — аудит не «индексируемости для Google», а «извлекаемости информации» для каждого бота отдельно. Сайты, «здоровые» по GSC, теряют данные на пути crawl → extraction → retrieval → answer.</p>
+<p><strong>Тред: Google считает страницы с инвентарём Soft 404</strong> — <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1wp4mqq/google_is_considering_pages_with_inventory_as/">Google is considering pages with inventory as Soft 404</a><br />
+- <strong>Суть:</strong> в GSC массы страниц с кодом 200 и реальным инвентарём помечены как Soft 404 — при том, что страницы не thin и имеют контекстные абзацы.<br />
+- <strong>Решения:</strong> searchcandy (score 4): <strong>проверяйте, как страницы реально рендерятся</strong> — «из опыта там почти всегда что-то происходит». Bottarello (score 3) конкретизировал: если инвентарь подгружается через JS — это и есть причина. _Toomuchawesome (score 1) скептически отметил, что OP уже отвечал про рендеринг в соседнем треде r/TechSEO, но поверить в это при soft 404 трудно.</p>
+<p><strong>Тред: Google видит продукт, ИИ-краулер — нет</strong> — <code>r/TechSEO</code> + <a href="https://www.reddit.com/r/TechSEO/comments/1ws7wy2/google_can_see_your_product_an_ai_crawler_might/">Google can see your product. An AI crawler might not.</a><br />
+- <strong>Суть:</strong> аудит e-commerce: в Chrome страница нормальная, Googlebot её краулит, schema валидна — но цена инжектится JavaScript, варианты и наличие отсутствуют в HTML, CDN отдаёт устаревший контент, а ИИ-краулеры получают другие ответы. Все SEO-дашборды зелёные, но «с точки зрения машины продукт неполный».<br />
+- <strong>Решения:</strong> No-Appeal8415 (score 3): разрыв «рендер vs raw» существует годами — просто ИИ-краулеры гораздо менее прощают отсутствие структурированных данных; <strong>устаревший контент на edge-нодах CDN — самое опасное звено</strong>; сайты с чистым SSR и версионированным кэшем скорее всего в порядке. Relative_Impress_782 (score 2) предложил методологию: <strong>тестировать raw-ответ каждого верифицированного бота отдельно</strong>, фиксируя статус, возраст кэша, robots-решение и наличие товарных полей — это превращает «ИИ не видит нас» в воспроизводимый delivery-баг.</p>
+<p><strong>Тред: технически здоровый сайт теряет информацию у ИИ</strong> — <code>r/TechSEO</code> + <a href="https://www.reddit.com/r/TechSEO/comments/1wrf6m6/a_site_can_be_technically_healthy_for_google_and/">A site can be technically healthy for Google and still lose information when AI systems crawl it</a><br />
+- <strong>Суть:</strong> систематизация паттернов: Googlebot получает 200, ИИ-краулер — 403; цена есть в рендеренном DOM, но не в raw HTML; schema валидна, но связи variant/offer неоднозначны; 301-цепочки в 4–5 хопов.<br />
+- <strong>Решения:</strong> More_Initiative_9099 (score 1) принёс данные Vercel: <strong>GPTBot запрашивает JS-файлы в ~11.5% случаев, ClaudeBot — ~24%, но ни один не исполняет их</strong> — всё клиентски-рендеренное для них невидимо; проверяйте цену в raw HTML, прежде чем винить schema. Sea-Possession-2536 (score 1) описал кейс Etsy: robots.txt разрешал краулинг, но edge отдавал 403 — «robots.txt сказал да, а edge сказал нет»; ключевой вопрос: <strong>403 идёт от origin или от CDN/WAF?</strong> От этого зависит, SEO-это тикет или инфраструктурный тикет.</p>
+<p><strong>Тред: лог-файлы для малых сайтов</strong> — <code>r/TechSEO</code> + <a href="https://www.reddit.com/r/TechSEO/comments/1wtkrk8/when_is_log_file_analysis_actually_worth_it_for/">When is log file analysis actually worth it for smaller sites?</a><br />
+- <strong>Суть:</strong> автор нашёл в логах клиентского сайта (45k визитов) аномалии краулинга, которые GSC не показывала, но после паузы в анализе «ничего не сломалось» — стоит ли продолжать?<br />
+- <strong>Решения:</strong> alvares169 (score 1): <strong>чем меньше сайт, тем полезнее логи</strong> — других данных мало; log crawler — «топ-10 автоматизаций, которые стоит сделать»: дёшево, надёжно и «единственные сырые правдивые данные». lottiexx (score 1) согласился, что лог-анализ недооценён для малых сайтов.</p>
+<hr />
+<h3>6. r/juststart: выживание аффилиатных проектов в 2026</h3>
+<p><strong>Почему важно:</strong> сабреддит, созданный в 2016 как «просто начни делать сайты», переживает кризис: AI-спам вытесняет реальные кейсы, а реальные кейсы показывают, что органическая аффилиатка стала радикально тяжелее.</p>
+<p><strong>Тред: «Что делать с r/juststart?»</strong> — <code>r/juststart</code> + <a href="https://www.reddit.com/r/juststart/comments/1wk4kqe/what_should_we_do_with_rjuststart/">What should we do with r/juststart?</a><br />
+- <strong>Суть:</strong> модератор-энтузиаст констатирует: основатель ушёл, «старая гвардия» разошлась, сабреддит превратился в свалку vibe-coded AI-проектов. Вопрос — менять направление или вводить фильтры.<br />
+- <strong>Решения:</strong> Dependent_Sugar_5718 (score 52, топ треда): сохранить мантру «just start», но <strong>жёстче правила — никаких low-effort «look at my AI wrapper» постов без реального дохода или хотя бы честного трафика; «пусть докажут, что построили что-то настоящее»</strong>. GWBrooks (score 21) предложил гейтинг по качеству, а не по типу поста: хайпишь сайт — <strong>таймстемпы метрик и живой URL</strong>; продаёшь vibe-coded штуку — бесплатный триал для сабреддита; ноль толерантности к нарушителям, «Be helpful or STFU/GTFO». slapjack15 (score 5) добавил идею ежеквартальных постов «How I Finally Just Started».</p>
+<p><strong>Тред: каждый проект умирает на одном и том же шаге</strong> — <code>r/juststart</code> + <a href="https://www.reddit.com/r/juststart/comments/1wledx6/every_project_i_build_dies_at_the_same_step_what/">Every project I build dies at the same step, what should i do?</a><br />
+- <strong>Суть:</strong> автор с 45k проиндексированных страниц получает 0–4 клика в день (было 10–100), потерял 40% кликов после удаления части страниц, трижды отклонён AdSense («low value content»), Product Hunt дал 6 апвотов, TikTok — ноль. Платный трафик не окупается на ad-модель. Классическая стена дистрибуции.<br />
+- <strong>Решения:</strong> Jellyfishr (score 8) дал горькую рамку: <strong>каждый день запускается 252k новых сайтов</strong> — шансы решать эту проблему неделю назад были выше, чем сегодня; «385k младенцев рождается ежедневно, и все они, вероятно, станут vibe-кодерами с 10 сайтами каждый к 8 годам». ricszmm (score 3) дал рабочий рецепт cold start: <strong>идти напрямую и персонализированно — DM, звонки, письма за партнёрствами, бесплатными листингами, гостевыми постами и упоминаниями в рассылках; платная реклама, SEO и соцсети — потом</strong>.</p>
+<p><strong>Тред: PA-API и цены Amazon — chicken-and-egg</strong> — <code>r/juststart</code> + <a href="https://www.reddit.com/r/juststart/comments/1wfjfz4/you_need_qualifying_sales_to_unlock_paapi_and/">You need qualifying sales to unlock PA-API and current prices to get the sales</a><br />
+- <strong>Суть:</strong> автор часового аффилиатного сайта описал обход ловушки: API открывается после квалифицирующих продаж, но продажи зависят от актуальных цен. Его решение — парсинг продуктовых страниц по расписанию в собственную таблицу цен: ~2559 обновлений в неделю на 3 рынка (US/UK/DE), 975+ товаров. Ключевые инсайты: <strong>статус наличия важнее точности цены</strong> (устаревшая цена на $2 конвертит, а «недоступный» товар с кнопкой покупки убивает доверие); дрейф цен — по рынкам, а не по товарам.<br />
+- <strong>Решения:</strong> Glittering-Ice2984 (score 1) разбил схему критикой: 2559 обновлений на 2906 ссылок — это «еженедельно с лишними шагами», а еженедельно автор сам назвал слишком медленно; <strong>Keepa API покрывает все три рынка и не ставит под удар Associates-аккаунт, а таймерный парсинг — прямое нарушение Operating Agreement</strong> (плюс Amazon отзывает PA-API при &lt;3 продаж за 180 дней). Altruistic-Shape-600 (score 0) защитил ядро идеи: собственная таблица цен не пропадает зря — после разблокировки API она становится резервом, а не единой точкой отказа.</p>
+<p><strong>Тред: 10 месяцев SEO-аффилиатки — 553k показов, €284</strong> — <code>r/juststart</code> + <a href="https://www.reddit.com/r/juststart/comments/1wbk57r/10_months_of_seoonly_amazon_affiliate_marketing/">10 months of SEO-only Amazon affiliate marketing</a><br />
+- <strong>Суть:</strong> честный кейс: 100% SEO (без соцсетей, email, платного трафика), high-ticket ниша €300–1500, Испания, &lt;10 часов в месяц. Итог — 14.7k кликов и €284 комиссий. Автор спрашивает, что улучшить.<br />
+- <strong>Решения:</strong> smitherson11 (score 6) указал на главную дыру: <strong>«почему конверсия такая низкая? Она должна быть намного выше — это и есть главная проблема»</strong>. milkstarz (score 3) дал конкретику: добавить buy-box'ы для CTR, сделать внутренние ссылки заметнее, и — поскольку Amazon платит максимум ~4% — <strong>искать более маржинальные офферы на других сетях</strong>. Автор (JoCodeX1) парировал: дорогие товары = длинный цикл покупки, узкая ниша в Испании, и сайт вообще не оптимизировался под конверсию.</p>
+<p><strong>Тред: как быстро можно публиковать контент</strong> — <code>r/juststart</code> + <a href="https://www.reddit.com/r/juststart/comments/1wa2vd1/how_fast_is_too_fast_to_publish_content_on_your/">How fast is too fast to publish content on your website?</a><br />
+- <strong>Суть:</strong> автор предлагает метод ответа на вечный вопрос «не слишком ли быстро я публикую» через GSC: смотреть Pages report и долю неиндексированных главных страниц.<br />
+- <strong>Решения:</strong> сам автор поста даёт пороги: <strong>10–20% неиндексированных главных страниц — норма; если большинство не в индексе, Google считает сайт низкокачественным — сначала аудит и консолидация, потом новый контент</strong>; для нового сайта, заспамленного контентом без авторитета, он честно рекомендует «рассмотреть старт на новом домене». pavlenkovit (score 1) добавил нюанс мультиязычности: одна статья превращается в 10 hreflang-«сиблингов», и непонятно, считает ли Google их десятью страницами; IceReasonable6968 (score 1) посоветовал сплитить Pages report по локалям.</p>
+<hr />
+<h3>7. Карьера, клиенты и деньги: что на самом деле продаётся</h3>
+<p><strong>Почему важно:</strong> от ожиданий клиентов и позиционирования подрядчика зависит, переживёт ли индустрия переход к AI-поиску — и кто останется в деньгах.</p>
+<p><strong>Тред: что делать SEO в большой устоявшейся компании</strong> — <code>r/SEO</code> + <a href="https://www.reddit.com/r/SEO/comments/1wtohdm/what_is_the_actual_seo_work_in_a_big_already/">What is the actual SEO work in a big, already established company?</a><br />
+- <strong>Суть:</strong> SEO-специалист (по основному профилю — ads) устроился в крупный бренд одежды с миллионными продажами и десятками тысяч товаров и не понимает, что добавлять: «проверяю ключи, говорим "мы в топе", и так каждый месяц».<br />
+- <strong>Решения:</strong> Suspicious_Yogurt280 (score 1) дал самый практичный ответ: сначала самоирония («говоришь "schema", "robots.txt", "canonical" — все впечатлены, потом весь день правишь H1»), затем фокус — <strong>оптимизация под Organic Shopping (форматы постоянно меняются и глючат) и контент из вопросов клиентской поддержки</strong>: «спросите у саппорта, какие раздражающие вопросы им задают постоянно, и сделайте контент под них — экономия на каждом звонке отличная cost-saving история для SLT». Nyodrax (score 1) описал реальность enterprise: «поле AEO-планирования, данных и вопросов от MLT».</p>
+<p><strong>Тред: «не стало хуже» за £420/мес</strong> — <code>r/SEO</code> + <a href="https://www.reddit.com/r/SEO/comments/1wthz5b/small_business_wrong_expectations/">Small business wrong expectations?</a><br />
+- <strong>Суть:</strong> владелец физиотерапевтической фирмы 7 месяцев платит £420/мес, улучшений нет, а подрядчик отвечает: «ну хотя бы не стало хуже». Вопрос — нормальны ли такие ожидания.<br />
+- <strong>Решения:</strong> Calm_One2480 (score 2): <strong>7 месяцев для локального бизнеса — достаточный срок для видимого движения</strong>; требуйте before/after отчёт из GSC, GA4 и GBP плюс список выполненных работ помесячно. sumizeit (score 2) дал проверочный тест: <strong>«"не стало хуже" — это то, что говорят, когда нечего показать в отчёте. Попросите список ключей и позиции на месяц 1 vs сейчас. Если не может выдать мгновенно — у вас есть ответ»</strong>; локальное SEO физиотерапии — «это в основном отзывы, оптимизация GBP и горстка правильных сервисных страниц». Lucifer_x7 (score 2): за £420 редко бывает талант — задавайте вопросы «почему» и «как», а не «что».</p>
+<p><strong>Тред: оффер local SEO с оплатой по результату</strong> — <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1wl9ykp/covering_my_butt_with_a_results_based_local_seo/">Covering my butt with a results based local seo offer</a><br />
+- <strong>Суть:</strong> владелец ecom-SEO бизнеса хочет войти в local SEO с оффером «90-дневный спринт, минимум +25% действий в Google Maps, оплата по факту» — и спрашивает, как юридически защититься и как продавать без холодных звонков.<br />
+- <strong>Решения:</strong> FrutinoTuti (score 2) разбил идею с двух сторон: <strong>гарантия неаппетитна — локальный бизнес не понимает, что такое GMB actions</strong>; и юридически не прикрыться — «вы не будете судиться с клиентом за $500–1000/мес»; альтернатива — предоплата с обещанием рефанда при недостижении. Автор (wowmo) отчитался: после двух холодных звонков (сбросили) переделал оффер на рефанд-модель с трекингом только звонков из GMB.</p>
+<p><strong>Тред: переход в фриланс после 5 лет в найме</strong> — <code>r/SEO_Digital_Marketing</code> + <a href="https://www.reddit.com/r/SEO_Digital_Marketing/comments/1wt6qja/im_seo_specialist_with_5_years_experience_how/">I'm SEO Specialist with 5+ Years Experience — How Should I Start Freelancing?</a><br />
+- <strong>Суть:</strong> специалист с 5+ годами опыта (on-page, off-page, линки, локалка) ищет платформу (Upwork/Fiverr/Contra/LinkedIn) и способ получить первых клиентов без вложений.<br />
+- <strong>Решения:</strong> Total-Mention9032 (score 1): реклама не нужна — <strong>за 5 лет вы уже знаете компании, которые пользуются SEO-услугами; предложите работать параллельно с текущим подрядчиком, при необходимости бесплатно</strong>; и прочитать Алекса Хормози «100 Million Leads».</p>
+<p><strong>Тред: будут ли платить за SEO, когда AI станет «достаточно хорош»</strong> — <code>r/TechSEO</code> + <a href="https://www.reddit.com/r/TechSEO/comments/1wsdwak/will_businesses_still_pay_for_seo_when_ai_becomes/">Will businesses still pay for SEO when AI becomes "good enough"?</a><br />
+- <strong>Суть:</strong> спор с другом: тот утверждает, что бизнесы будут использовать AI вместо SEO-специалиста, потому что «средний результат за копейки» их устраивает — как с AI-постерами.<br />
+- <strong>Решения:</strong> alvares169 (score 5, топ треда) дал циничную, но структурную формулу: <strong>«Если есть ранжирование — есть способ им манипулировать. Если есть способ — найдётся рынок, готовый за это платить»</strong>. Arcayon (-7) возразил, что «платить за манипуляцию — не то же самое, что платить за оптимизацию информационного поиска; грифтерство реально» — и был заминусован сообществом.</p>
+<hr />
+<h2>💡 Интересные решения и советы</h2>
+<p><strong>1. Keepa API вместо парсинга Amazon — и своя таблица цен как резерв</strong><br />
+Пересказ: если вы в Amazon-аффилиатке и ещё не открыли PA-API, не скрапьте продуктовые страницы по таймеру — это нарушение Operating Agreement и риск отзыва аккаунта. Используйте Keepa API (покрывает US/UK/DE) для цен и наличия. При этом собственная таблица цен, построенная до разблокировки API, не пропадает: после открытия PA-API она становится резервом на случай rate-limit или сбоя, а не единой точкой отказа.<br />
+- Кто предложил: Glittering-Ice2984 (критика + альтернатива), Altruistic-Shape-600 (защита идеи таблицы)<br />
+- Источник: <code>r/juststart</code> + <a href="https://www.reddit.com/r/juststart/comments/1wfjfz4/you_need_qualifying_sales_to_unlock_paapi_and/">You need qualifying sales to unlock PA-API...</a> — цитата: <em>«Keepa's API covers all three markets and does'nt put your Associates account at risk. Scraping the product page on a timer is a straight violation of the Operating Agreement»</em></p>
+<p><strong>2. GSC Pages report как «светофор» перед масштабированием контента</strong><br />
+Пересказ: прежде чем публиковать новые страницы (особенно AI-генерированные пачками), откройте Pages report в Search Console и посчитайте долю неиндексированных главных страниц. 10–20% — норма; большинство не в индексе — Google считает сайт низкокачественным: стоп публикации, аудит, консолидация и перелинковка. Если новый сайт заспамлен контентом без авторитета — честный вариант начать на новом домене.<br />
+- Кто предложил: автор поста<br />
+- Источник: <code>r/juststart</code> + <a href="https://www.reddit.com/r/juststart/comments/1wa2vd1/how_fast_is_too_fast_to_publish_content_on_your/">How fast is too fast to publish content on your website?</a> — цитата: <em>«10-20% of your main pages not indexed is normal. If it's the majority, Google thinks your site is low quality»</em></p>
+<p><strong>3. «Категорийная диета» для GBP</strong><br />
+Пересказ: если после добавления вторичных категорий профиль начал показываться по конкурентам и просел по «near me» — это category dilution. Верните одну первичную категорию и максимум одну честную вторичную; ассортимент пусть «рассказывают» меню, текст отзывов (Google читает их тяжело) и контент сайта.<br />
+- Кто предложил: keyworddotcom<br />
+- Источник: <code>r/localseo</code> + <a href="https://www.reddit.com/r/localseo/comments/1wsv0dr/gbp_categories_selection_is_confusing_google_as/">GBP categories selection is confusing Google as to who we are</a> — цитата: <em>«this is a classic case of category dilution... stripping it back to your primary category, plus maybe one secondary that genuinely describes the business»</em></p>
+<p><strong>4. Аудит «что получает каждый бот» вместо одного SEO-дашборда</strong><br />
+Пересказ: постройте процедуру: для каждого верифицированного бота (Googlebot, GPTBot, ClaudeBot и др.) снимайте raw-ответ и фиксируйте статус-код, возраст кэша CDN, robots-решение и наличие ключевых товарных полей (цена, наличие, варианты) именно в raw HTML. Помните: GPTBot запрашивает JS лишь в ~11.5% случаев и не исполняет его — всё клиентски-рендеренное для ИИ невидимо. Отдельно выясняйте, идёт ли 403 от origin или от CDN/WAF — это определяет, кому отдавать тикет.<br />
+- Кто предложил: Relative_Impress_782 (методология), More_Initiative_9099 (данные Vercel), Sea-Possession-2536 (origin vs edge)<br />
+- Источник: <code>r/TechSEO</code> + <a href="https://www.reddit.com/r/TechSEO/comments/1ws7wy2/google_can_see_your_product_an_ai_crawler_might/">Google can see your product. An AI crawler might not.</a> и <a href="https://www.reddit.com/r/TechSEO/comments/1wrf6m6/a_site_can_be_technically_healthy_for_google_and/">A site can be technically healthy for Google and still lose information...</a> — цитата: <em>«Test the raw response for each verified bot and record the status, cache age, robots decision, and product fields present»</em></p>
+<p><strong>5. Тест дееспособности SEO-подрядчика за 5 минут</strong><br />
+Пересказ: если подрядчик за 7 месяцев говорит «не стало хуже» — попросите список таргетируемых ключей и позиции на месяц 1 vs сейчас, плюс before/after отчёт из GSC, GA4 и GBP и список работ помесячно. Если отчёт не выдаётся мгновенно — решение очевидно. Для локалки за этот срок должны быть видны движения в локальных ранках, видимости GBP и звонках.<br />
+- Кто предложил: sumizeit, Calm_One2480<br />
+- Источник: <code>r/SEO</code> + <a href="https://www.reddit.com/r/SEO/comments/1wthz5b/small_business_wrong_expectations/">Small business wrong expectations?</a> — цитата: <em>«Ask him for a list of keywords he's targeting and where they ranked at month 1 vs now. If he can't produce that instantly, you have your answer»</em></p>
+<p><strong>6. Правило 410/301 по ссылочному профилю</strong><br />
+Пересказ: при ретиринге старых страниц после миграции решение принимается по одной переменной — есть ли внешние ссылки. Есть → 301 на ближайшую релевантную страницу/категорию. Нет → 410 без колебаний. Если страница ранится и даёт трафик — третий путь: не удалять, а поставить наверху CTA-блок на новый контент и «перераспределить» трафик.<br />
+- Кто предложил: SEOPub, yy633013, Spurtboy<br />
+- Источник: <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1wjqn5t/retiring_old_news_and_event_pages_after_a_site/">Retiring old news and event pages after a site migration</a> — цитата: <em>«If any of those pages attracted links from other sites, I would 301 redirect them. If not, there really isn't a benefit to a redirect. I would just 410 them»</em></p>
+<p><strong>7. Cold start дистрибуции: прямые аутричи до SEO и рекламы</strong><br />
+Пересказ: если сайт получает 0–4 клика в день и платный трафик не окупается — не доливайте в SEO, идите напрямую: персонализированные DM, звонки и письма за партнёрства, бесплатные листинги в нишевых каталогах, гостевые посты за ссылки, упоминания в нишевых рассылках. Платная реклама, SEO и соцсети — после того, как найдены первые «ручные» каналы.<br />
+- Кто предложил: ricszmm<br />
+- Источник: <code>r/juststart</code> + <a href="https://www.reddit.com/r/juststart/comments/1wledx6/every_project_i_build_dies_at_the_same_step_what/">Every project I build dies at the same step, what should i do?</a> — цитата: <em>«cold start by going direct and personalized to people and companies. Talk, DM, call and mail for partnerships, (free) listings or guest posts for backlinks»</em></p>
+<p><strong>8. Контент из вопросов клиентской поддержки — SEO с финансовой историей для руководства</strong><br />
+Пересказ: в enterprise, где «всё уже есть», найдите работу через саппорт: соберите самые частые раздражающие вопросы клиентов и сделайте контент, который на них отвечает. Это снижает нагрузку на поддержку — и превращается в понятную cost-saving историю для SLT, чего не может похвастаться большинство SEO-инициатив. Параллельно фокусируйтесь на Organic Shopping — форматы там постоянно меняются и глючат, т.е. работа всегда есть.<br />
+- Кто предложил: Suspicious_Yogurt280<br />
+- Источник: <code>r/SEO</code> + <a href="https://www.reddit.com/r/SEO/comments/1wtohdm/what_is_the_actual_seo_work_in_a_big_already/">What is the actual SEO work in a big, already established company?</a> — цитата: <em>«speaking to customer care and seeing what annoying questions they are always asked and making content to meet that — saving money per call is a real nice cost-saving story to SLT»</em></p>
+<p><strong>9. Рефанд-модель вместо «гарантии результата» в local SEO</strong><br />
+Пересказ: оффер «платите только за рост GMB-действий» не работает ни как маркетинг (клиенты не знают, что такое GMB actions), ни как юридическая защита (судиться с клиентом за $500–1000/мес никто не будет). Рабочая схема: предоплата + обещание рефанда при недостижении, метрика — только звонки, трекаемые из GMB. Автор треда именно так и переделал свой оффер после первых неудачных холодных звонков.<br />
+- Кто предложил: FrutinoTuti (схема), wowmo (автор, внедрил)<br />
+- Источник: <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1wl9ykp/covering_my_butt_with_a_results_based_local_seo/">Covering my butt with a results based local seo offer</a> — цитата: <em>«you can ask them to pay first and promise a refund if you don't deliver»</em></p>
+<hr />
+<h2>💬 Лучшие комментарии тредов</h2>
+<blockquote>
+<p>«keep the "just start" mantra but maybe slap some stricter posting rules on it. no low-effort "look at my AI wrapper" posts unless they show actual revenue or at least genuine traffic. make people prove they built something real»</p>
+</blockquote>
+<p>— <strong>Dependent_Sugar_5718</strong>, score: 52, в треде <a href="https://www.reddit.com/r/juststart/comments/1wk4kqe/what_should_we_do_with_rjuststart/">What should we do with r/juststart?</a></p>
+<blockquote>
+<p>«Got a site you're hyping? Timestamped metrics and live URL. Technique that worked for you? Point us to the site... Be helpful or STFU/GTFO. Zero-tolerance ban for rule breakers.»</p>
+</blockquote>
+<p>— <strong>GWBrooks</strong>, score: 21, в треде <a href="https://www.reddit.com/r/juststart/comments/1wk4kqe/what_should_we_do_with_rjuststart/">What should we do with r/juststart?</a></p>
+<blockquote>
+<p>«Isn't that just a fancy name for an RSS feed?»</p>
+</blockquote>
+<p>— <strong>Lucker_Noob</strong>, score: 21, в треде <a href="https://www.reddit.com/r/SEO/comments/1wt06ne/google_now_rolling_out_web_monitoring_feature_in/">Google now rolling out Web Monitoring feature in AI Mode</a></p>
+<blockquote>
+<p>«We can just expect these to roll out EVERY month now.»</p>
+</blockquote>
+<p>— <strong>PDFBearSupport</strong>, score: 14, в треде <a href="https://www.reddit.com/r/SEO/comments/1wp6ml7/google_search_central_on_x_today_we_released_the/">Google Search Central on X: September 2026 spam update</a></p>
+<blockquote>
+<p>«Nice. No more YouTube or Reddit. Thank God.»</p>
+</blockquote>
+<p>— <strong>PDFBearSupport</strong>, score: 13, в треде <a href="https://www.reddit.com/r/SEO/comments/1wqg2d8/chatgpt_stopped_citing_youtube_in_september/">ChatGPT stopped Citing YouTube in September</a></p>
+<blockquote>
+<p>«Yeah, I've noticed this too. AI search keeps changing so fast that it's hard to tell if it's a real shift or just a temporary thing.»</p>
+</blockquote>
+<p>— <strong>Insightfulvoice</strong>, score: 7, в треде <a href="https://www.reddit.com/r/SEO/comments/1wqg2d8/chatgpt_stopped_citing_youtube_in_september/">ChatGPT stopped Citing YouTube in September</a></p>
+<blockquote>
+<p>«Why is your conversion rate so low? It should be much higher. This seems to be the main problem keeping your profit so low.»</p>
+</blockquote>
+<p>— <strong>smitherson11</strong>, score: 6, в треде <a href="https://www.reddit.com/r/juststart/comments/1wbk57r/10_months_of_seoonly_amazon_affiliate_marketing/">10 months of SEO-only Amazon affiliate marketing</a></p>
+<blockquote>
+<p>«Keyworditt... pulls keyword ideas directly from Reddit discussions... GMB Everywhere's Chrome extension to reverse engineer competitor categories... Local Falcon is super useful for visualizing rankings across different parts of a city since rankings can change massively street-by-street.»</p>
+</blockquote>
+<p>— <strong>Particular-Will1833</strong>, score: 6, в треде <a href="https://www.reddit.com/r/localseo/comments/1wtcceh/what_are_the_best_local_seo_tools_that_save_you/">What are the best local SEO tools that save you atleast 10+ hours every week?</a></p>
+<blockquote>
+<p>«If there's a ranking, there's a way to manipulate it. If there's a way to manipulate it, there's a market willing to pay for it.»</p>
+</blockquote>
+<p>— <strong>alvares169</strong>, score: 5, в треде <a href="https://www.reddit.com/r/TechSEO/comments/1wsdwak/will_businesses_still_pay_for_seo_when_ai_becomes/">Will businesses still pay for SEO when AI becomes "good enough"?</a></p>
+<blockquote>
+<p>«Check how they actually render, could be lots of things but from past experience there often is something going on to cause that.»</p>
+</blockquote>
+<p>— <strong>searchcandy</strong>, score: 4, в треде <a href="https://www.reddit.com/r/bigseo/comments/1wp4mqq/google_is_considering_pages_with_inventory_as/">Google is considering pages with inventory as Soft 404</a></p>
+<blockquote>
+<p>«Yeah, this is a classic case of category dilution... Google reads review text heavily for local, so if customers are already mentioning your burgers and salads in reviews, Google picks [that up].»</p>
+</blockquote>
+<p>— <strong>keyworddotcom</strong>, score: 4, в треде <a href="https://www.reddit.com/r/localseo/comments/1wsv0dr/gbp_categories_selection_is_confusing_google_as/">GBP categories selection is confusing Google as to who we are</a></p>
+<blockquote>
+<p>«The CDN serving stale responses is the one that would keep me up at night. You can have everything perfect on your end and some edge node is handing out last weeks product page.»</p>
+</blockquote>
+<p>— <strong>No-Appeal8415</strong>, score: 3, в треде <a href="https://www.reddit.com/r/TechSEO/comments/1ws7wy2/google_can_see_your_product_an_ai_crawler_might/">Google can see your product. An AI crawler might not.</a></p>
+<blockquote>
+<p>«The "does not target link spam" line is a Gemini inference, not something Google said... Annotate the date, wait for the completion notice, then diff by page type and query intent.»</p>
+</blockquote>
+<p>— <strong>charlesnobleseo</strong>, score: 3, в треде <a href="https://www.reddit.com/r/SEO_Digital_Marketing/comments/1wp6oe6/google_september_2026_spam_update_is_rolling_out/">Google September 2026 Spam Update Is Rolling Out</a></p>
+<blockquote>
+<p>«traffic went up a bit this week, like 15% maybe. i removed bunch of old guest posts from 2022 and fixed some thin content pages. still not back to pre-june levels though.»</p>
+</blockquote>
+<p>— <strong>gloomyheadcount3532</strong>, score: 2, в треде <a href="https://www.reddit.com/r/bigseo/comments/1wt7639/anyone_hit_by_the_june_spam_update_seeing_changes/">Anyone hit by the June spam update seeing changes during the September update?</a></p>
+<hr />
+<h2>📈 Тренды и наблюдения</h2>
+<ol>
+<li><strong>Спам-апдейты стали ежемесячной рутиной.</strong> Четыре спам-апдейта за 2026 год (март, июнь, август, сентябрь) — и топ-комментарий треда анонса («ждите их каждый месяц») воспринят без возражений. Со</li>
+</ol></main>
+<footer class="site">Автогенерируется парсером Reddit + LLM · 2026-09-30 07:47</footer>
+</body></html>
