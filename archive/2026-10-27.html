@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Дайджест 2026-10-27</title><style>
+:root { --accent: #e74c3c; --bg: #fdfdfb; --fg: #1a1a2e; --muted: #6b7280; --card: #ffffff; }
+* { box-sizing: border-box; }
+body { font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; line-height: 1.7;
+       max-width: 960px; margin: 0 auto; padding: 28px 18px 80px; color: var(--fg); background: var(--bg); }
+header.site { border-bottom: 3px solid var(--accent); padding-bottom: 14px; margin-bottom: 28px; }
+header.site h1 { margin: 0; font-size: 1.7em; }
+header.site h1 a { color: var(--fg); text-decoration: none; }
+header.site .sub { color: var(--muted); font-size: .95em; margin-top: 4px; }
+
+/* ── Карточки на главной ── */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+         gap: 18px; margin-top: 8px; }
+.card { display: flex; flex-direction: column; background: var(--card);
+        border: 1px solid #e5e2dd; border-radius: 12px; padding: 18px;
+        text-decoration: none; color: var(--fg);
+        transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,.08);
+              border-color: var(--accent); }
+.card .date { font-size: 1.15em; font-weight: 700; color: var(--accent); margin-bottom: 6px; }
+.card .title { font-weight: 600; margin-bottom: 8px; line-height: 1.4; }
+.card .snippet { color: var(--muted); font-size: .88em; line-height: 1.55;
+                 display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;
+                 overflow: hidden; margin-bottom: 12px; flex-grow: 1; }
+.card .meta { display: flex; gap: 10px; font-size: .8em; color: var(--muted);
+              border-top: 1px dashed #e5e2dd; padding-top: 10px; }
+.card .meta .pill { background: #f5f0eb; border-radius: 20px; padding: 2px 10px; }
+.card.latest { border-color: var(--accent); box-shadow: 0 4px 14px rgba(231,76,60,.12); }
+.card.latest .date::after { content: " — свежий"; font-size: .75em; font-weight: 400;
+                            color: var(--muted); }
+
+/* ── Страница дайджеста ── */
+h2 { font-size: 1.3em; margin-top: 1.8em; color: #2c3e50;
+     border-left: 4px solid var(--accent); padding-left: 10px; }
+h3 { font-size: 1.08em; color: #34495e; margin-top: 1.4em; }
+table { border-collapse: collapse; width: 100%; font-size: .92em; margin: 12px 0; }
+th, td { border: 1px solid #ddd; padding: 7px 10px; text-align: left; vertical-align: top; }
+th { background: #f5f0eb; }
+blockquote { margin: 12px 0; padding: 8px 16px; background: #f8f5f0;
+             border-left: 4px solid #d4a017; font-style: italic; }
+a { color: #c0392b; }
+hr { border: none; border-top: 1px solid #e0ddd8; margin: 28px 0; }
+code { background: #f0ede8; padding: 1px 5px; border-radius: 3px; font-size: .9em; }
+.backlink { display: inline-block; margin-bottom: 18px; color: var(--muted); }
+footer.site { margin-top: 48px; color: var(--muted); font-size: .85em; }
+</style></head><body>
+<header class="site">
+  <h1><a href="/">📋 SEO-дайджест Reddit</a></h1>
+  <div class="sub">Ежедневное саммари r/SEO · r/bigseo · r/juststart · r/TechSEO · r/localseo и др.</div>
+</header>
+<main><a class="backlink" href="../">← Все дайджесты</a><h1>📋 Дайджест SEO-сабреддитов: r/SEO, r/bigseo, r/juststart, r/SEO_Digital_Marketing, r/TechSEO, r/localseo</h1>
+<p><strong>Дата:</strong> 2026-10-27 05:14<br />
+<strong>Постов:</strong> 60</p>
+<hr />
+<h1>📊 Аналитика Reddit-обсуждений: SEO-сабреддиты</h1>
+<p><strong>Проанализировано:</strong> ~60 постов из r/SEO, r/bigseo, r/juststart, r/SEO_Digital_Marketing, r/TechSEO, r/localseo (период ~конец октября 2026).</p>
+<p><strong>Общая картина:</strong> сообщество живёт в реальности «показы есть — кликов нет». На фоне новостей, что AI Overviews охватывают 80%+ поисков Google, главные боли — падающий CTR, проблемы индексации, последствия миграций и спор о том, чем вообще является AI-поиск: каналом трафика или брендовым каналом. В local SEO — кейсы с реальными цифрами и бунт против дорогих инструментов. В r/juststart — кризис идентичности сообщества из-за потока AI-самопиара.</p>
+<hr />
+<h2>🔥 Ключевые темы и проблемы</h2>
+<h3>1. Кризис CTR: миллионы показов при почти нулевых кликах</h3>
+<p><strong>Тред 1: r/bigseo — <a href="https://www.reddit.com/r/bigseo/comments/1xfo8z7/have_117m_impression_06_ctr_how_can_i_improve_my/">Have 1.17M impression, 0.6 CTR. How can I improve my CTR?</a></strong><br />
+1. <strong>Суть проблемы.</strong> Автор 10+ лет ведёт хобби-сайт на WordPress: 1,17 млн показов, всего 7,19k кликов (CTR 0,6%), средняя позиция 9,3. При этом профиль ссылок сильный: ~2,5k органических бэклинков, два десятка ссылок из Википедии, 2,9k страниц почти все в индексе. Он открыл магазин и хочет понять, как конвертировать показы в клики.<br />
+2. <strong>Почему важно.</strong> Это классическая картина «видимости без трафика» эпохи AI Overviews: сайт ранжируется, но сидит на дне первой страницы / начале второй, где кликов почти нет. Сообщество сходится, что проблема не в сниппетах, а в позициях и объёме ключей.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>Effective_Variety318</strong> (score: 3): целить высокочастотные ключи; в GSC найти страницы с низким CTR и обновить контент/тайтлы/дескрипшены; связать блог с магазином внутренними ссылками; проверять релевантность бэклинков, а не только количество.<br />
+   - <strong>Global_Speaker_5841</strong> (score: 1): позиция 9,3 — это «дно первой страницы», где никто не кликает; проверить, не забиты ли SERP фичеред-сниппетами и image pack'ами, которые «убивают CTR при любых тайтлах».<br />
+   - <strong>StretchHamm</strong> (score: 1): раз Google переписывает тайтлы, чинить надо H1 и первый абзац — именно оттуда Google берёт текст при перезаписи.</p>
+<p><strong>Тред 2: r/bigseo — <a href="https://www.reddit.com/r/bigseo/comments/1xf4nun/getting_200k_google_impressions_but_only_02_ctr/">Getting 200k+ Google impressions but only 0.2% CTR</a></strong><br />
+1. <strong>Суть проблемы.</strong> Нишевый контент-сайт: 275k показов и 600 кликов за 28 дней (CTR 0,2%). Автор уже пробовал улучшать тайтлы, мета-описания, перелинковку — без результата. Не понимает: это проблема ранжирования, интента или чего-то ещё.<br />
+2. <strong>Почему важно.</strong> Самый показательный тред недели: комментаторы единодушно объяснили, что 0,2% CTR математически означает «показы не на первой странице», и мета-теги тут бессильны. Это отрезвляющий ответ всем, кто начинает оптимизацию со сниппетов.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>Wooden_Bat3252</strong> (score: 5): «переписывание мета-описаний ничего не сдвинет — сначала проверь среднюю позицию в GSC, тайтлы имеют значение только в топ-5».<br />
+   - <strong>Silent-Goat5206</strong> (score: 3): сортировать GSC по позиции и работать со страницами на позициях 11–15 — это самый быстрый путь к кликам.<br />
+   - <strong>Over-City4367</strong> (score: 2): «275k показов и 600 кликов — вы сидите где-то на странице 3, никакое мета-описание это не чинит».</p>
+<p><strong>Тред 3: r/TechSEO — <a href="https://www.reddit.com/r/TechSEO/comments/1xfsed9/impressions_never_taking_off/">Impressions never taking off</a></strong><br />
+1. <strong>Суть проблемы.</strong> Личный проект развивается год, контент выходит еженедельно (часть рукописная, часть AI), но «J-кривая» показов так и не началась, клики падают из-за AI Overviews.<br />
+2. <strong>Почему важно.</strong> Показывает типичную ловушку массового AI-контента: плато показов при регулярной публикации.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>DeckJesta</strong> (score: 2): общий график показов малоинформативен — сгруппировать ключи по темам, выделить коммерческие запросы, запросы на позициях 5–10 для on-page правок и запросы, которым нужна отдельная страница.<br />
+   - <strong>FilippeTraum</strong> (score: 1): посмотреть «Crawled - currently not indexed» в отчёте Pages — AI-черновики оседают там первыми; вместо новых постов расширять 10 постов, которые уже получают показы.</p>
+<p>Источники: <code>r/bigseo</code> + треды выше, <code>r/TechSEO</code> + <a href="https://www.reddit.com/r/TechSEO/comments/1xfsed9/impressions_never_taking_off/">Impressions never taking off</a></p>
+<hr />
+<h3>2. Индексация: Google «подстригает» сайты, а вебмастера чинят не то</h3>
+<p><strong>Тред 1: r/SEO — <a href="https://www.reddit.com/r/SEO/comments/1xg3loh/does_domain_authority_matter_more_than_technical/">Does domain authority matter more than technical SEO for getting Google to actually crawl new pages after a migration?</a></strong><br />
+1. <strong>Суть проблемы.</strong> Автор два месяца чинил всю технику (pre-rendering, canonical/redirect loops, hreflang, перелинковка, sitemap), но проиндексированные страницы застряли на отметке «2». Googlebot рендерит страницы нормально — часть просто никогда не краулилась неделями после попадания в sitemap. Домен после миграции почти без бэклинков.<br />
+2. <strong>Почему важно.</strong> Редкий честный кейс: техника идеальна, а краулинга нет. Тред поднял фундаментальный вопрос — приоритизация краулингового бюджета через авторитет домена.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>PDFBearSupport</strong> (score: 2): из ~1,5 млрд сайтов проиндексировано ~214 млн — Google вынужден приоритизировать, и сигнал приоритета это бэклинки/реферинг-домены: «можете иметь лучший сайт мира, но если никто на вас не ссылается — не ждите доверия Google».<br />
+   - <strong>WxMan2201</strong> (score: 2): контраргумент — «техническое здоровье, конкретно индексируемость и discoverability, идёт прежде Domain Authority»; без краулинга авторитет бесполезен. Итог дискуссии: нужна и техника, и ссылки.</p>
+<p><strong>Тред 2: r/bigseo — <a href="https://www.reddit.com/r/bigseo/comments/1xc6ui9/would_having_a_lot_of_nonindexed_pages_affected_a/">Would having a lot of non-indexed pages affected a site's overall search rankings?</a></strong><br />
+1. <strong>Суть проблемы.</strong> B2B-сайт (промышленное производство) с историей запущенности: 1,6 млн страниц, из которых проиндексировано только 8,86k, а «реальных» страниц 150–200. Остальное — легаси плюс следы «японского keyword/doorway-хака». 410-редиректы «не работают», новый блог не ранжируется.<br />
+2. <strong>Почему важно.</strong> Показывает, как мусорный индекс душит живой сайт: краул-бюджет съедается призраками.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>Winter-Leave-9650</strong> (score: 6): «1,6 млн страниц-призраков — это скелетная команда, которая рулит в глазах Google. Проверьте, что 410 реально отдаёт правильный статус-код и вы случайно не noindex'ите их — если Google не видит 410, для него ничего не произошло».<br />
+   - <strong>yOdimeeck72</strong> (score: 2): подтверждает — если сервер не отдаёт настоящий 410, Google возвращается снова и снова, как ни в чём не бывало.</p>
+<p><strong>Тред 3: r/bigseo — <a href="https://www.reddit.com/r/bigseo/comments/1x6bsv4/my_sites_index_count_used_to_be_around_7000_pages/">My site's index count used to be around 7,000 pages, but it has been steadily dropping and is now down to 2,000</a></strong><br />
+1. <strong>Суть проблемы.</strong> Четыре месяца технической работы, скрин краула — 96/100, а индекс падает с 7 000 до 2 000 страниц, и автор не понимает почему.<br />
+2. <strong>Почему важно.</strong> Идеальная иллюстрация того, что «отличный скрин краула» ничего не говорит о качестве индекса.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>marintkael</strong> (score: 7): экспортировать исключённые URL и проверить их в Performance за 16 месяцев — «если большинство потерянных 5k ни разу не получили показ, Google просто подстригает страницы, для которых не видел пользы, и никакой краул-скрин это не изменит».<br />
+   - <strong>StretchHamm</strong> (score: 3): экспорт отчёта индексации ограничен 1 000 примеров URL — дробить sitemap по типам страниц, чтобы увидеть, какой именно раздел теряет страницы.</p>
+<p><strong>Тред 4: r/TechSEO — <a href="https://www.reddit.com/r/TechSEO/comments/1xf7moc/got_tired_of_clicking_through_request_indexing/">Got tired of clicking through Request Indexing for every new post, so I made it one command</a></strong><br />
+1. <strong>Суть проблемы.</strong> Автор автоматизировал «URL Inspection → Live test → Request Indexing» через браузерное расширение, потому что новые страницы маленького сайта неделями ждут краула из sitemap.<br />
+2. <strong>Почему важно.</strong> Вокруг треда собралась важная техническая правда об ограничениях ускорения индексации.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>marintkael</strong> (score: 2): у кнопки нет публичного API (URL Inspection API только читает статус, Indexing API официально ограничен вакансиями и стримами) — «для маленького сайта более сильный рычаг — линковать новые посты со страниц, которые Google уже часто краулит, например с главной».</p>
+<p><strong>Тред 5: r/localseo — <a href="https://www.reddit.com/r/localseo/comments/1xfw41e/fix_pest_control_site/">Fix pest control site</a></strong><br />
+1. <strong>Суть проблемы.</strong> На сайте pest-контроль-компании найдены неиндексируемые orphan-страницы «услуга + район», в RankMath ключ не совпадает с тайтлом. Автор спрашивает: удалять или отправлять на индексацию?<br />
+2. <strong>Почему важно.</strong> Мини-версия темы: локальные doorway-подобные страницы — типичная причина мусорного индекса.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>seobility</strong> (score: 1): если страницы содержат реальную локальную полезность — линковать с сервисных страниц; если это один и тот же копирайт с заменённым названием района — мержить в сильную страницу (риск doorway); перед удалением проверить причину неиндексации через URL Inspection.<br />
+   - <strong>Shibu_Deeson</strong> (score: 1): несовпадение ключа и тайтла — большая проблема; orphan-страницы не индексируются в первую очередь потому, что на них нет внутренних ссылок.</p>
+<p>Источники: <code>r/SEO</code>, <code>r/bigseo</code>, <code>r/TechSEO</code>, <code>r/localseo</code> — треды выше.</p>
+<hr />
+<h3>3. AI Overviews и GEO: «80% поисков», спор Haynes vs King и DIY-измерители</h3>
+<p><strong>Тред 1: r/SEO — <a href="https://www.reddit.com/r/SEO/comments/1xgfko5/over_80_of_google_searches_have_ai_overviews/">Over 80% Of Google Searches Have AI Overviews</a></strong><br />
+1. <strong>Суть проблемы.</strong> Новость (Seroundtable): AI Overviews появляются более чем в 80% поисков Google. Реакция сообщества — уже не шок, а сарказм и адаптация.<br />
+2. <strong>Почему важно.</strong> Фоновая реальность, объясняющая все CTR-треды недели.<br />
+3. <strong>Решения из комментариев.</strong> <strong>btoned</strong> (score: 1): «кто бы мог подумать — с тех пор как Google включил их по умолчанию»; <strong>khadija2880</strong> (score: 1): контент должен быть предельно структурированным и полезным, чтобы модели легко его пересказывали.</p>
+<p><strong>Тред 2: r/SEO — <a href="https://www.reddit.com/r/SEO/comments/1xfs86b/ai_search_tracking/">AI search tracking</a></strong><br />
+1. <strong>Суть проблемы.</strong> Автор перепробовал ranketa, seranking, peec.ai — все показывают разные результаты. Нужен точный инструмент, а не «красивые цифры для акционеров».<br />
+2. <strong>Почему важно.</strong> Рынок AI-трекинга вырос, но единой методологии нет — данные принципиально нестабильны.<br />
+3. <strong>Решения из комментариев.</strong> <strong>socleads</strong> (score: 2): «никакому из них нельзя верить как "точному" — AI-ответы меняются между запусками, аккаунтами, локациями и формулировками. Используйте один инструмент последовательно для трендов, а промпты, критичные для бизнеса, проверяйте вручную». <strong>The_Jonce</strong> (score: 1): трекает AI-трафик через GA4, но руководству нужны конкретные промпты с упоминанием бренда.</p>
+<p><strong>Тред 3: r/bigseo — <a href="https://www.reddit.com/r/bigseo/comments/1xd85xs/google_ai_overviews_are_basically_legal_content/">Google AI Overviews are basically legal content theft at this point</a></strong><br />
+1. <strong>Суть проблемы.</strong> Автор две недели делал оригинальный кейс-стади с реальными данными — Google пересказал его выводы в снапшоте, никто не кликнул. «Как теперь мотивировать себя писать лонгриды?»<br />
+2. <strong>Почему важно.</strong> Эмоциональное ядро недели: демотивация создателей контента.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>Silent-Goat5206</strong> (score: 1): жёстко, но по делу — «если Google пересказал ваши точные выводы, значит ценностью был не датасет, а текст. И это не кража: вы опубликовали это публично, robots.txt вот он».<br />
+   - <strong>SuperPerformance3322</strong> (score: 1): делать данные и методологию настолько ценными, чтобы саммари не могло заменить статью — ответы в снапшоте, детальный анализ, графики и выводы на сайте.<br />
+   - <strong>Born-Particular-4363</strong> (score: 2): пессимистичный взгляд — «права на интеллектуальную собственность больше не существуют, как и антимонопольного права».</p>
+<p><strong>Тред 4: r/SEO_Digital_Marketing — <a href="https://www.reddit.com/r/SEO_Digital_Marketing/comments/1xg373c/is_geo_a_distraction_marie_haynes_vs_mike_king/">Is GEO a Distraction? Marie Haynes vs. Mike King (and the Tactics That Work)</a></strong><br />
+1. <strong>Суть проблемы.</strong> Marie Haynes на данных 100 сайтов и 145+ млн сессий GA4 за 12 месяцев показала: ChatGPT даёт 0,62% трафика от Google, все LLM вместе — 0,73%; при конверсии 13,8% против 3,02% Google всё равно дал в 27 раз больше конверсий; ChatGPT-трафик падает с релиза GPT-5. Mike King возразил: AI-поиск — брендовый канал, а не канал трафика («как оценивать рекламу на Super Bowl по CTR»).<br />
+2. <strong>Почему важно.</strong> Центральный идеологический спор недели: куда вкладывать ресурсы. Комментарии показали и скепсис к мотивам сторон.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>itisoktodance</strong> (score: 1): живой пример в пользу King — «200 визитов в неделю из AI против ~25 000 из Google, но AI конвертирует: ~20 конверсий в неделю из AI против 5 из Google, и лиды уже квалифицированы».<br />
+   - <strong>quicksexfm</strong> (score: 2): «сообществу пора перестать спорить об аббревиатурах и делать работу, в которую веришь».<br />
+   - <strong>Defiant_Solid_2945</strong> (score: 2): напоминание о конфликте интересов — агентство Mike King развернулось в GEO-услуги; «правы не оба».</p>
+<p><strong>Тред 5: r/SEO — <a href="https://www.reddit.com/r/SEO/comments/1xfx1kf/bing_adds_topic_portfolio_insights_reports_with/">Bing adds Topic Portfolio Insights Reports with Volume and Query Suggestions</a></strong><br />
+1. <strong>Суть проблемы.</strong> Bing (Copilot + партнёры) начал отдавать отчёты: «Grounding Queries» (где вас уже цитируют, с точными счётчиками) и «Opportunity Queries» (где цитируют конкурентов, с диапазонами объёмов).<br />
+2. <strong>Почему важно.</strong> Первый бесплатный источник реальных AI-цитирований — на фоне платных и неточных AI-трекеров это заметно.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>brandhacker</strong> (score: 1): «это самые полезные GEO-данные сейчас, и они бесплатные. Grounding queries — золото: это запросы, которые реально печатает AI, а не выдуманные трекером». На своём сайте увидел ~830 цитирований за 30 дней, из них ~400 на одной французской странице.<br />
+   - <strong>bealyntalks</strong> (score: 2): практическая оговорка — сначала проверить, объёмы в Opportunity Queries месячные или за весь выбранный период.</p>
+<p><strong>Тред 6: r/TechSEO — <a href="https://www.reddit.com/r/TechSEO/comments/1xfbdl3/built_my_own_ai_visibility_tracker_on_scraped/">Built my own AI visibility tracker on scraped answers. Worth open sourcing?</a></strong><br />
+1. <strong>Суть проблемы.</strong> Автор построил внутренний AI-трекер, потому что платные инструменты «слишком дорогие для того, что дают». Работает через реверс-инжиниринг цитирований: какие страницы каждый движок цитирует → размещаться на этих сайтах/листиклах.<br />
+2. <strong>Почему важно.</strong> Готовая методология DIY-измерения AI-видимости дешевле Peec/Otterly.<br />
+3. <strong>Решения из комментариев.</strong> Автор делится четырьмя уроками: скрейпить реальные ответы приложений, а не API (API не показывает, что видит пользователь); один прогон ничего не значит — 5 прогонов на промпт с усреднением; матчинг брендов через список алиасов с очередью ревью; каждая процитированная URL — площадка для размещения. В комментариях <strong>Biffxs</strong> уточняет, что использует SearchApi как скрейп-API.</p>
+<p>Источники: <code>r/SEO</code>, <code>r/bigseo</code>, <code>r/SEO_Digital_Marketing</code>, <code>r/TechSEO</code> — треды выше.</p>
+<hr />
+<h3>4. Миграции сайтов: как переехать и выпасть из карты за неделю</h3>
+<p><strong>Тред: r/bigseo — <a href="https://www.reddit.com/r/bigseo/comments/1xdjd4r/hard_decline_in_google_rating_after_switching_to/">Hard decline in google rating after switching to Articulation</a></strong><br />
+1. <strong>Суть проблемы.</strong> Агентство по дрон-обработке полей переехало с Weebly на Articulation (хостинг + домен) — и вылетело из Google Maps, хотя раньше стабильно висело в топ-1–3 по «ag drone applicators» в штате. Автору теперь приходится вручную чинить Search Console и бэкенд.<br />
+2. <strong>Почему важно.</strong> Классический «migration disaster»: комментаторы быстро показали, что хост ни при чём — проблема в миграции URL и в Google Business Profile.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>Novel-Breakfast7737</strong> (score: 5): «профиль GMB, вероятно, всё ещё указывает на старые сигналы Weebly, и Google пытается всё согласовать. Исчезновение с карты = NAP-несоответствие. Проверьте GMB: обновлён ли URL сайта, совпадают ли цитирования точь-в-точь. А потом покричите в подушку — рекраул займёт недели».<br />
+   - <strong>Ambitious_Reading465</strong> (score: 4): «виноват не хост, а миграция. Если URL изменились, а 301 не были один-к-одному — вы потеряли ссылочный вес. А позиция в map pack по "ag drone applicators" идёт из Google Business Profile, а не от того, кто держит ваш DNS».<br />
+   - <strong>StretchHamm</strong> (score: 1): смена сайта и данных профиля одновременно может триггерить ревью или soft suspension Business Profile — это объясняет исчезновение с карты лучше, чем смена хостинга.</p>
+<p>Источник: <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1xdjd4r/hard_decline_in_google_rating_after_switching_to/">Hard decline in google rating after switching to Articulation</a></p>
+<hr />
+<h3>5. Local SEO: map pack решает, инструменты слишком дорогие, кейсы с цифрами в цене</h3>
+<p><strong>Тред 1: r/localseo — <a href="https://www.reddit.com/r/localseo/comments/1xfswcz/have_local_seo_rank_tracking_tools_become/">Have local SEO rank tracking tools become ridiculously expensive, or is it just me?</a></strong><br />
+1. <strong>Суть проблемы.</strong> Автор 5 лет платил за Local Viking, а на продлении получил счёт $390/год — при том, что использует только GeoGrid-поиски (~20 в месяц, сетки 13×13) и историю результатов. Ищет дешёвую альтернативу без «полного люкса» функций.<br />
+2. <strong>Почему важно.</strong> Симптом broader-тренда: узкоспециализированным юзерам продают suites, которые им не нужны.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>beaglesbark2much</strong> (score: 2): собрать трекер самому на DataForSEO + Playground SEO с GitHub — «сетка 11×11 с шагом в милю стоит меньше $0,15», платишь только за API-запросы.<br />
+   - <strong>Unlikely_Ebb_6344</strong> (score: 2): по калькулятору Whitespark 20 сеток 13×13 в месяц — всего $20/месяц: «вы буквально выбрасываете $360 в год за фичи, которые никогда не открываете».</p>
+<p><strong>Тред 2: r/localseo — <a href="https://www.reddit.com/r/localseo/comments/1xfyoe9/report_for_keyword_in_gmb_name/">report for keyword in GMB name?</a></strong><br />
+1. <strong>Суть проблемы.</strong> У клиента (эвакуаторная компания) в названии GMB — реальное имя бизнеса, а все конкуренты втиснули главный ключ в название GMB и ранжируются значительно выше. Стоит ли репортить все профили?<br />
+2. <strong>Почему важно.</strong> Вечная локальная дилемма: keyword stuffing в GBP работает, а жалобы — лотерея.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>BubblesUp</strong> (score: 3): «откуда вы знаете, что у них нет dba с этим названием? Репортить можно, но если они докажут зарегистрированное название — просто вернут его обратно».<br />
+   - <strong>ElephantOutside8529</strong> (score: 1): Google смотрит на имя в реальном мире — проверить сайты, оклейку грузовиков, инвойсы; при массовой жалобе использовать business redressal complaint form со скриншотами их сайтов как доказательством, и заскринить текущие позиции — владельцы часто возвращают ключ через несколько недель.</p>
+<p><strong>Тред 3: r/localseo — <a href="https://www.reddit.com/r/localseo/comments/1xg0mxw/orthodontist_local_seo_case_study_google_maps/">Orthodontist local SEO case study: Google Maps top-3 visibility went from 68% → 85% and 53% → 81% at two offices in 3 months</a></strong><br />
+1. <strong>Суть проблемы/кейс.</strong> Ребилд сайта и GBP двухлокационной ортодонтической практики: доля топ-3 в map pack (замер по 169 точкам вокруг офиса) выросла с 68%→85% и 53%→81%; клики из поиска 304→753/мес (~2,5x) после полугодового падения.<br />
+2. <strong>Почему важно.</strong> Редкий кейс с методологией: аудит по Google/картам/AI-ассистентам, оффер на данных транзакций практики, контент-гэпы против конкурентов, миграция с редиректами и rebuilt structured data.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>PostAuditMode</strong> (score: 2): резонный вопрос — почему 3 месяца, и почему не начали с брендового спроса и репутации для быстрых результатов?<br />
+   - <strong>alaalshaibani</strong> (score: 1, автор): прогресс был уже на 2-й месяц (+10 и +18 п.п.); рост кликов пришёл из небрендовых запросов, брендовые остались на уровне — так и задумывалось.</p>
+<p><strong>Тред 4: r/localseo — <a href="https://www.reddit.com/r/localseo/comments/1xg4req/local_seo_for_auto_parts_stores_detroit_case_study/">Local SEO for Auto Parts Stores (Detroit Case Study)</a></strong><br />
+1. <strong>Суть проблемы/кейс.</strong> Мультилокейшн-сеть магазинов автозапчастей: топ-3 точки на сетке 7×7 по «auto parts near me» выросли с 34 до 144 из 245; звонки в GBP по 5 старым магазинам +20,2% (июнь к июню); звонки — 73–77% всех действий в GBP.<br />
+2. <strong>Почему важно.</strong> Практические детали, которые редко пишут: разные категории GBP для магазинов с разборкой (salvage) и без; видео-верификация нового магазина работает только при вывеске и заполненных полках; переименование локации — самое болезненное (сначала DBA).<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>TangibleSEO</strong> (score: 1): как отчитываться — «один дашборд Looker Studio: сеть сверху, каждая локация строкой ниже, YoY, фильтры. Звонки и маршруты — первыми в каждом отчёте. Позиции — просто доказательство».<br />
+   - <strong>mangvm</strong> (score: 2) и <strong>xdvenom_isblacksmith</strong> (score: 2): вопросы про консолидацию данных и ревью по 6 магазинам — тред превратился в практический разбор.</p>
+<p><strong>Тред 5: r/localseo — <a href="https://www.reddit.com/r/localseo/comments/1xfuckn/34_days_into_a_new_local_seo_project_pretty_happy/">34 days into a new local SEO project</a> + r/SEO — <a href="https://www.reddit.com/r/SEO/comments/1xg7yhw/question_about_multiple_sites_vs_1_main_site_with/">Question about Multiple Sites vs 1 main site with location landing pages</a></strong><br />
+1. <strong>Суть проблемы.</strong> (а) Новый локальный проект в Испании: 34 дня, 106 кликов, 14 785 показов, 104 страницы в индексе, первый платящий клиент — но информационные статьи кликов получают больше, чем сервисные страницы. (б) Веб-разработчик ветеринарок хочет подтверждения, что стратегия «отдельные сайты для мультилокейшн-клиентов» (настаивал прежний «SEO-стратег») неверна.<br />
+2. <strong>Почему важно.</strong> Оба треда — про базовые ориентиры local SEO, которые новички постоянно путают.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>R_hy</strong> (score: 7): добавить в форму поле «как вы нас нашли?» — тогда будет известно, откуда пришёл следующий клиент.<br />
+   - <strong>AdOutside6466</strong> (score: 4) и <strong>Shibu_Deeson</strong> (score: 2): главный фокус local SEO — map pack, потому что он даёт лиды, а не «посетителей, которые не конвертятся».<br />
+   - <strong>Expensive-Pound9566</strong> (score: 1, r/SEO): «один сайт, отдельные локальные лендинги, на каждом — список услуг этой локации»; отдельные сайты не нужны.</p>
+<p>Источники: <code>r/localseo</code>, <code>r/SEO</code> — треды выше.</p>
+<hr />
+<h3>6. Каннибализация и консолидация: бесплатная альтернатива покупке ссылок</h3>
+<p><strong>Тред: r/juststart — <a href="https://www.reddit.com/r/juststart/comments/1xehjdi/the_unglamorous_checklist_i_run_before_touching/">The unglamorous checklist I run before touching backlinks on a stalled site</a></strong><br />
+1. <strong>Суть проблемы.</strong> Автор (владелец линк-бизнеса Hetneo's Links, честно признаёт конфликт интересов) утверждает: большинство постов «сайт застрял» — это замаскированные посты про ссылки, но чаще сайт конкурирует сам с собой. Его порядок действий перед тратой денег на ссылки: (1) найти в GSC запросы с показами без кликов и проверить, какой URL выбирает Google — если выбор скачет между двумя постами, это каннибализация; (2) посчитать посты под один интент и смержить слабые в сильный с редиректами; (3) проверить crawl depth — всё дальше трёх кликов от главной почти невидимо; (4) только потом ссылки, и только для 2–3 страниц, которые реально зарабатывают.<br />
+2. <strong>Почему важно.</strong> Шаги 1–3 бесплатны и обратимы, ссылки — нет. Тред вызвал и жёсткий скепсис: <strong>MCMK</strong> (score: 10) назвал его «weekly ai slop with standard ai slop first comment» — показательный эпизод недоверия к «чеклист-контенту».<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>Financial_Ninja_7518</strong> (score: 1): при слиянии выбирать выжившую страницу по тому URL, который Google уже показывает в GSC, а не по тому, который «написан лучше» — «я видел, как люди мержили в "более красиво написанный" пост и теряли ранжирования, которые заработал некрасивый».<br />
+   - <strong>Few_Cost6107</strong> (score: 1): перед выбором выжившего проверить, на какой из двух URL указывают ссылки — был случай, когда выжил «лучший» пост, а редиректился единственный, на который кто-то вообще ссылался.</p>
+<p>Источник: <code>r/juststart</code> + <a href="https://www.reddit.com/r/juststart/comments/1xehjdi/the_unglamorous_checklist_i_run_before_touching/">The unglamorous checklist I run before touching backlinks on a stalled site</a></p>
+<hr />
+<h3>7. Реальность самостоятельных проектов: запуск, скука, честные цифры</h3>
+<p><strong>Тред 1: r/juststart — <a href="https://www.reddit.com/r/juststart/comments/1wk4kqe/what_should_we_do_with_rjuststart/">What should we do with r/juststart?</a></strong><br />
+1. <strong>Суть проблемы.</strong> Метатред: сабреддит, созданный в 2016 под лозунг «просто начни делать сайты», превратился в свалку вайб-кодed AI-проектов. Модерация спрашивает, куда двигаться дальше.<br />
+2. <strong>Почему важно.</strong> Симптом болезни всех SEO-комьюнити 2026 года: самопродвижение под видом кейсов.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>GWBrooks</strong> (score: 25): гейтинг по качеству, а не по типу поста — «хайпишь сайт? Метрики с таймстампами и живой URL. Техника, которая сработала? Покажи сайт. Вайб-кодed штуку хочешь продать? Бесплатный триал даже только для r/juststart. Ноль терпимости к нарушителям».<br />
+   - <strong>slapjack15</strong> (score: 5): выделенный день/тред для самопиара + ежеквартальные посты «How I Finally Just Started».</p>
+<p><strong>Тред 2: r/juststart — <a href="https://www.reddit.com/r/juststart/comments/1wledx6/every_project_i_build_dies_at_the_same_step_what/">Every project I build dies at the same step, what should i do?</a></strong><br />
+1. <strong>Суть проблемы.</strong> Автор: 45k страниц в индексе, 0–4 клика в день (было 10–100 до проблем с AI-краулерами), удалил 40% страниц по политике и потерял 40% кликов за ночь, AdSense отклонён трижды («low value content»), Product Hunt — 6 апвоутов и тишина, TikTok — ноль.<br />
+2. <strong>Почему важно.</strong> Самый честный портрет «distraction-экономики»: дистрибуция не работает ни по одному каналу.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>Jellyfishr</strong> (score: 9): жёсткая рамка — «каждый день запускается 252k новых сайтов. Шансы решить это на прошлой неделе были выше, чем на этой. Зато в день рождается 385k детей — вероятно, все они будут вайб-кодерами с десятью сайтами к восьми годам».<br />
+   - <strong>ricszmm</strong> (score: 4): для B2B холодный старт — прямой персонализированный аутрич: разговоры, DM, звонки, партнёрства, бесплатные листинги, гостевые посты под бэклинки; платная реклама, SEO и соцсети — потом.</p>
+<p><strong>Тред 3: r/juststart — <a href="https://www.reddit.com/r/juststart/comments/1wbk57r/10_months_of_seoonly_amazon_affiliate_marketing/">10 months of SEO-only Amazon affiliate marketing — 553k impressions, 14.7k clicks, €284 in commissions</a></strong><br />
+1. <strong>Суть проблемы.</strong> Автор выложил полные цифры: 10 месяцев, 100% SEO-трафик, high-ticket ниша (€300–1500), менее 10 часов работы в месяц — и €284 комиссий. Спрашивает, что улучшать.<br />
+2. <strong>Почему важно.</strong> Редкая честность: обычно показывают только успехи. Комментарии мгновенно нашли слабое место воронки.<br />
+3. <strong>Решения из комментариев.</strong><br />
+   - <strong>smitherson11</strong> (score: 5): «почему конверсия такая низкая? Она должна быть сильно выше — это главная проблема, держащая прибыль внизу».<br />
+   - <strong>milkstarz</strong> (score: 3): добавить buy box'ы для CTR по партнёрским ссылкам, сделать внутренние ссылки заметнее; «Amazon платит максимум ~4% — есть ли доступ к другим партнёрским сетям с более высокими ставками?»</p>
+<p><strong>Тред 4: r/juststart — <a href="https://www.reddit.com/r/juststart/comments/1wm4v42/always_iterating_never_launching/">Always Iterating Never Launching</a> и <a href="https://www.reddit.com/r/juststart/comments/1w6ck7n/boredom_kills_more_businesses_than_failure_ever/">Boredom kills more businesses than failure ever will</a></strong><br />
+1. <strong>Суть проблемы.</strong> Два «мотивационных» треда: вечная полировка без запуска (автор 4 года учится кодить и не релизит) и тезис, что предприниматели бросают не из-за трудностей, а из-за скуки второго года.<br />
+2. <strong>Почему важно.</strong> Сообщество отвечает практикой, а не мотивацией.<br />
+3. <strong>Решения из комментариев.</strong> <strong>SelectionOriginal784</strong> (score: 3): «запуск — это где всё становится настоящим, всё до него — практика в безопасном пространстве. Что бы вы вырезали, чтобы выпустить версию в этом месяце?»; <strong>IceReasonable6968</strong> (score: 2): «ловушка "target pool": начинаешь строить для 4 миллиардов вместо 10, которые воспользовались бы завтра. Отгружать уродливое, но работающее — лучше полировки непротестированного».</p>
+<p>Источники: <code>r/juststart</code> — треды выше.</p>
+<hr />
+<h2>💡 Интересные решения и советы</h2>
+<h3>1. «Негламурный чеклист» перед покупкой ссылок</h3>
+<ul>
+<li><strong>Саммари решения.</strong> Прежде чем тратить деньги на ссылки для застрявшего сайта: (1) в GSC найти запросы с показами без кликов и посмотреть, какой URL Google выбирает — скачка между двумя постами = каннибализация; (2) смержить дублирующие интент посты в один сильный с 301 у проигравших; (3) проверить, что всё важное не дальше 3 кликов от главной; (4) только после этого покупать ссылки — и лишь для 2–3 страниц, которые уже зарабатывают. Логика: шаги 1–3 бесплатны и обратимы, ссылки — нет.</li>
+<li>Кто предложил: автор поста (владелец линк-сервиса Hetneo's Links, с disclosed bias)</li>
+<li>Источник: <code>r/juststart</code> + <a href="https://www.reddit.com/r/juststart/comments/1xehjdi/the_unglamorous_checklist_i_run_before_touching/">The unglamorous checklist I run before touching backlinks on a stalled site</a> — цитата: <em>«steps 1-3 are free and reversible, links are neither»</em></li>
+</ul>
+<h3>2. Диагностика падения индекса через Performance за 16 месяцев</h3>
+<ul>
+<li><strong>Саммари решения.</strong> При падении числа проиндексированных страниц: экспортировать исключённые URL из отчёта индексации и прогнать их через отчёт Performance за 16 месяцев. Если большинство выпавших страниц ни разу не получили показ — Google целенаправленно подстригает «бесполезные» страницы, и никакой краул-скрин это не отменит. Если показы были — смотреть канониклы и что изменилось в момент начала падения. Лайфхак от второго комментатора: экспорт ограничен 1 000 примеров URL, поэтому дробить sitemap по типам страниц, чтобы локализовать потери.</li>
+<li>Кто предложил: <strong>marintkael</strong> (score: 7), дополнение — <strong>StretchHamm</strong> (score: 3)</li>
+<li>Источник: <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1x6bsv4/my_sites_index_count_used_to_be_around_7000_pages/">My site's index count used to be around 7,000 pages...</a> — цитата: <em>«If most of the lost 5k never got a single impression, Google is trimming pages it saw no use for»</em></li>
+</ul>
+<h3>3. Workflow планирования страницы: DataForSEO + Reddit + Claude Code</h3>
+<ul>
+<li><strong>Саммари решения.</strong> Перед написанием страницы: (1) тянуть объёмы из DataForSEO — пример: «spider-man brand new day» = 201 000/мес, а «...review» = 90, хотя спрос на ревью огромен (тред с 2 700+ апвоутов на r/movies) — по тулу одному вы бы решили, что ревью никому не нужно; (2) скриптом собрать топ-комментарии из 8 профильных сабреддитов за месяц (~48 постов, ~200 комментариев) — оттуда реальные вопросы пользователей, которые становятся секциями статьи; (3) всё это превращается в «mega prompt» для Claude Code, который планирует страницу до написания. Ключевой принцип: Reddit-инсайты не подтверждаются объёмами — решение «включать ли» принимает человек.</li>
+<li>Кто предложил: автор поста</li>
+<li>Источник: <code>r/juststart</code> + <a href="https://www.reddit.com/r/juststart/comments/1xau4k0/i_showed_my_seo_and_ai_search_workflow_on_a/">I showed my SEO and AI Search workflow on a webinar...</a> — цитата: <em>«If I'd gone by the keyword tool alone I'd have decided nobody wants a review»</em></li>
+<li>Дополнение от <strong>Strong_Teaching8548</strong> (score: 3): не останавливаться на самом объёмном ключе — брать «decision moment»-запросы («x vs y», «is x worth it»), которые почти не показывают объём, поэтому их все пропускают.</li>
+</ul>
+<h3>4. DIY GeoGrid-трекинг вместо $390/год за подписку</h3>
+<ul>
+<li><strong>Саммари решения.</strong> Вместо дорогих локальных трекеров собрать собственный: DataForSEO API + опенсорсный Playground SEO с GitHub. Платишь только за данные: сетка 11×11 с шагом в милю стоит меньше $0,15. Альтернатива без кода — калькулятор Whitespark: 20 сеток 13×13 в месяц обходится в ~$20/мес против $390/год у Local Viking за тот же объём.</li>
+<li>Кто предложил: <strong>beaglesbark2much</strong> (score: 2), поддержка — <strong>Unlikely_Ebb_6344</strong> (score: 2)</li>
+<li>Источник: <code>r/localseo</code> + <a href="https://www.reddit.com/r/localseo/comments/1xfswcz/have_local_seo_rank_tracking_tools_become/">Have local SEO rank tracking tools become ridiculously expensive, or is it just me?</a> — цитата: <em>«An 11x11 map at 1 mile is less than $.15»</em></li>
+</ul>
+<h3>5. Bing Topic Portfolio Insights как бесплатный источник GEO-данных</h3>
+<ul>
+<li><strong>Саммари решения.</strong> В Bing Webmaster Tools появились отчёты с двумя списками: Grounding Queries (где ваш сайт уже цитируют Copilot/Bing AI, с точными счётчиками) и Opportunity Queries (где цитируют других, с диапазонами объёмов). Практика: grounding queries — самые честные данные, потому что это реальные запросы, которые печатает AI, а не синтетические промпты трекеров; opportunity queries — готовый список тем для новых страниц. Сначала проверить, месячные ли объёмы или за весь период.</li>
+<li>Кто предложил: <strong>brandhacker</strong> (score: 1), оговорка — <strong>bealyntalks</strong> (score: 2)</li>
+<li>Источник: <code>r/SEO</code> + <a href="https://www.reddit.com/r/SEO/comments/1xfx1kf/bing_adds_topic_portfolio_insights_reports_with/">Bing adds Topic Portfolio Insights Reports with Volume and Query Suggestions</a> — цитата: <em>«the grounding queries part is the gold, because those are the searches the AI actually types»</em></li>
+</ul>
+<h3>6. Собственный AI-visibility трекер на скрейпинге реальных ответов</h3>
+<ul>
+<li><strong>Саммари решения.</strong> Методология дешевле Peec/Otterly: (1) скрейпить ответы из реальных приложений (ChatGPT, Gemini, Copilot, AI Mode), а не брать API — API не показывает, что видит пользователь (другие источники, нет живого поиска); (2) каждый промпт гонять 5 раз на движок и усреднять — один прогон ничего не значит, бренды меняются от запуска к запуску; (3) матчинг брендов через список алиасов с очередью ручного ревью (доменный матчинг ловит ложные срабатывания); (4) главное — цитирования: каждая процитированная URL — площадка, на которую нужно попасть (листиклы и т.п.). Результаты близки к платным тулам, стоимость — центы за промпт (SearchApi).</li>
+<li>Кто предложил: автор поста</li>
+<li>Источник: <code>r/TechSEO</code> + <a href="https://www.reddit.com/r/TechSEO/comments/1xfbdl3/built_my_own_ai_visibility_tracker_on_scraped/">Built my own AI visibility tracker on scraped answers. Worth open sourcing?</a> — цитата: <em>«the models API doesnt show you what a user actually sees»</em></li>
+</ul>
+<h3>7. Выбор «выжившей» страницы при слиянии дубликатов</h3>
+<ul>
+<li><strong>Саммари решения.</strong> При консолидации каннибализирующих страниц выжившую определять не по качеству текста, а по данным: (1) какой URL Google уже показывает в GSC по целевому запросу — тот и выживает; (2) дополнительно проверить, на какой из страниц есть внешние ссылки — известны случаи, когда мержили в «красиво написанный» пост и теряли ранжирования некрасивого, на который были ссылки.</li>
+<li>Кто предложил: <strong>Financial_Ninja_7518</strong> (score: 1) и <strong>Few_Cost6107</strong> (score: 1)</li>
+<li>Источник: <code>r/juststart</code> + <a href="https://www.reddit.com/r/juststart/comments/1xehjdi/the_unglamorous_checklist_i_run_before_touching/">The unglamorous checklist I run before touching backlinks on a stalled site</a> — цитата: <em>«pick the survivor by whichever URL Google already shows for the query in Search Console, not by which draft you like better»</em></li>
+</ul>
+<h3>8. Проверка «здоровья индекса» перед наращиванием темпа публикаций</h3>
+<ul>
+<li><strong>Саммари решения.</strong> Прежде чем ускорять публикацию (особенно AI-контента): открыть отчёт Pages в GSC и посчитать долю проиндексированных «главных» страниц (игнорируя теги, фильтры и намеренно закрытые). 10–20% не в индексе — норма. Если не проиндексировано большинство — Google считает сайт низкокачественным: сначала аудит, удаление/консолидация и починка перелинковки, новые страницы не публиковать. Отдельный красный флаг: новый сайт, который массово масштабнул контент до авторитета и почти не индексируется — по опыту автора, из этого состояния почти не выбираются, иногда честнее стартовать на новом домене.</li>
+<li>Кто предложил: автор поста</li>
+<li>Источник: <code>r/juststart</code> + <a href="https://www.reddit.com/r/juststart/comments/1wa2vd1/how_fast_is_too_fast_to_publish_content_on_your/">How fast is too fast to publish content on your website?</a> — цитата: <em>«10-20% of your main pages not indexed is normal. If it's the majority, Google thinks your site is low quality»</em></li>
+</ul>
+<h3>9. Массовая жалоба на keyword stuffing в названиях GMB</h3>
+<ul>
+<li><strong>Саммари решения.</strong> Прежде чем репортить конкурентов с ключом в названии GBP: проверить их «реальное имя в мире» — сайт, оклейку машин, инвойсы (dba-регистрации недостаточно, если в реальности ключ не используется). При жалобе на несколько профилей сразу не использовать «Suggest an edit», а business redressal complaint form со скриншотами их сайтов как доказательством. Обязательно заскринить текущие позиции до жалобы — владельцы часто возвращают ключ через несколько недель.</li>
+<li>Кто предложил: <strong>ElephantOutside8529</strong> (score: 1), осторожность — <strong>BubblesUp</strong> (score: 3)</li>
+<li>Источник: <code>r/localseo</code> + <a href="https://www.reddit.com/r/localseo/comments/1xfyoe9/report_for_keyword_in_gmb_name/">report for keyword in GMB name?</a> — цитата: <em>«use the business redressal complaint form, with screenshots of their own site as evidence»</em></li>
+</ul>
+<hr />
+<h2>💬 Лучшие комментарии тредов</h2>
+<blockquote>
+<p>«I'm all for gating on quality rather than type of post. Got a site you're hyping? Timestamped metrics and live URL. [...] Zero-tolerance ban for rule breakers.»</p>
+</blockquote>
+<p>— <strong>GWBrooks</strong>, score: 25, в треде <a href="https://www.reddit.com/r/juststart/comments/1wk4kqe/what_should_we_do_with_rjuststart/">What should we do with r/juststart?</a></p>
+<blockquote>
+<p>«Weekly ai slop with standard ai slop first comment. How is this even on topic for this subreddit.»</p>
+</blockquote>
+<p>— <strong>MCMK</strong>, score: 10, в треде <a href="https://www.reddit.com/r/juststart/comments/1xehjdi/the_unglamorous_checklist_i_run_before_touching/">The unglamorous checklist I run before touching backlinks on a stalled site</a></p>
+<blockquote>
+<p>«252k new websites are launched each day. Your odds of solving this last week was a lot easier than this week. But fear not, 385k babies are born each day, however they are probably all going to be vibe coders with 10 sites each by age 8.»</p>
+</blockquote>
+<p>— <strong>Jellyfishr</strong>, score: 9, в треде <a href="https://www.reddit.com/r/juststart/comments/1wledx6/every_project_i_build_dies_at_the_same_step_what/">Every project I build dies at the same step, what should i do?</a></p>
+<blockquote>
+<p>«congrats on the first client.. that's the real milestone nd an amazing feeling yk! A small tip tho: I should add a 'how did you find us?' field to ur form so u will know where the next one comes from»</p>
+</blockquote>
+<p>— <strong>R_hy</strong>, score: 7, в треде <a href="https://www.reddit.com/r/localseo/comments/1xfuckn/34_days_into_a_new_local_seo_project_pretty_happy/">34 days into a new local SEO project</a></p>
+<blockquote>
+<p>«Export the excluded URLs and check them in Performance over 16 months. If most of the lost 5k never got a single impression, Google is trimming pages it saw no use for, and no crawl score moves that.»</p>
+</blockquote>
+<p>— <strong>marintkael</strong>, score: 7, в треде <a href="https://www.reddit.com/r/bigseo/comments/1x6bsv4/my_sites_index_count_used_to_be_around_7000_pages/">My site's index count used to be around 7,000 pages...</a></p>
+<blockquote>
+<p>«1.6m ghost pages is a skeleton crew running the show in google's eyes. get those 410s actually returning the right status code and make sure you're not noindexing them by accident.»</p>
+</blockquote>
+<p>— <strong>Winter-Leave-9650</strong>, score: 6, в треде <a href="https://www.reddit.com/r/bigseo/comments/1xc6ui9/would_having_a_lot_of_nonindexed_pages_affected_a/">Would having a lot of non-indexed pages affected a site's overall search rankings?</a></p>
+<blockquote>
+<p>«Migration disasters happen way more than people talk about. Your GMB profile is probably still pointing to the old Weebly signals and Google's having a fit trying to reconcile everything.»</p>
+</blockquote>
+<p>— <strong>Novel-Breakfast7737</strong>, score: 5, в треде <a href="https://www.reddit.com/r/bigseo/comments/1xdjd4r/hard_decline_in_google_rating_after_switching_to/">Hard decline in google rating after switching to Articulation</a></p>
+<blockquote>
+<p>«0.2% on 275k impressions means basically none of those impressions are on page one, so rewriting meta descriptions isn't going to move anything. Check the average position in GSC first, titles only matter once you're in the top 5.»</p>
+</blockquote>
+<p>— <strong>Wooden_Bat3252</strong>, score: 5, в треде <a href="https://www.reddit.com/r/bigseo/comments/1xf4nun/getting_200k_google_impressions_but_only_02_ctr/">Getting 200k+ Google impressions but only 0.2% CTR</a></p>
+<blockquote>
+<p>«Why is your conversion rate so low? It should be much higher. This seems to be the main problem keeping your profit so low.»</p>
+</blockquote>
+<p>— <strong>smitherson11</strong>, score: 5, в треде <a href="https://www.reddit.com/r/juststart/comments/1wbk57r/10_months_of_seoonly_amazon_affiliate_marketing/">10 months of SEO-only Amazon affiliate marketing</a></p>
+<blockquote>
+<p>«The host isn't what dropped you, the migration is. If any URLs changed and the 301s weren't one to one, you lose the equity [...] A map pack spot for "ag drone applicators" comes from your Google Business Profile, not from whoever's holding your DNS.»</p>
+</blockquote>
+<p>— <strong>Ambitious_Reading465</strong>, score: 4, в треде <a href="https://www.reddit.com/r/bigseo/comments/1xdjd4r/hard_decline_in_google_rating_after_switching_to/">Hard decline in google rating after switching to Articulation</a></p>
+<blockquote>
+<p>«what about map pack? local SEO's main focus is ranking there cuz is gives leads instead of visitors that don't convert»</p>
+</blockquote>
+<p>— <strong>AdOutside6466</strong>, score: 4, в треде <a href="https://www.reddit.com/r/localseo/comments/1xfuckn/34_days_into_a_new_local_seo_project_pretty_happy/">34 days into a new local SEO project</a></p>
+<blockquote>
+<p>«At 0.2% you're not ranking for anything worth clicking, so titles are a waste of time. Sort GSC by position and work the pages sitting at 11 to 15 instead.»</p>
+</blockquote>
+<p>— <strong>Silent-Goat5206</strong>, score: 3, в треде <a href="https://www.reddit.com/r/bigseo/comments/1xf4nun/getting_200k_google_impressions_but_only_02_ctr/">Getting 200k+ Google impressions but only 0.2% CTR</a></p>
+<blockquote>
+<p>«There should be exactly zero 404's in a site map - the point of the site map is to say what pages are there. 404 says that it's not there.»</p>
+</blockquote>
+<p>— <strong>BoGrumpus</strong>, score: 3, в треде <a href="https://www.reddit.com/r/bigseo/comments/1x9w9ax/seo_help_weekly_mega_thread/">SEO Help Weekly Mega Thread</a></p>
+<blockquote>
+<p>«How do you know they don't have the dba for the name? I would report, but know that if they can prove their title is registered, they'll just come back with the same name.»</p>
+</blockquote>
+<p>— <strong>BubblesUp</strong>, score: 3, в треде <a href="https://www.reddit.com/r/localseo/comments/1xfyoe9/report_for_keyword_in_gmb_name/">report for keyword in GMB name?</a></p>
+<hr />
+<h2>📈 Тренды и наблюдения</h2>
+<ol>
+<li><strong>AI Overviews стали фоном, а не новостью.</strong> При 80%+ охвате поисков реакция сообщества — сарказм («Google сделал их дефолтом — кто бы мог подумать») и переход к измерению: Bing-отчёты, DIY-трекеры на скрейпинге, споры о методологии. При этом реальные цифры трезвят: AI-трафик — 0,6–0,7% от Google-органики.</li>
+<li><strong>CTR-коллапс — новая норма, и сообщество выработало чёткий протокол диагностики:</strong> сначала средняя позиция в GSC, потом страницы 11–15, и только потом мета-теги. Три отдельных треда с разными цифрами получили одинаковый ответ — это консенсус.</li>
+<li><strong>Индексация — боль №1 технических тредов.</strong> Google «подстригает» бесполезные страницы (7k→2k, 1,6 млн призраков), и стандартная ошибка — чинить краул-скрин вместо проверки, что 410 реально отдаёт 410 и что страницы вообще получали показы.</li>
+<li><strong>Усталость от AI-slop и самопиара.</strong> Метатред r/juststart (43 комментария), «5th toaster» в r/TechSEO, «ai slop» с 10 апвоутами — сообщества требуют пруфов (живой URL + метрики) и обсуждают гейтинг качества.</li>
+<li><strong>DIY на API против дорогих SaaS.</strong> DataForSEO за центы вместо $390/год, собственный AI-трекер вместо Peec, Looker Studio вместо агентских отчётов — явный тренд «собери сам».</li>
+<li><strong>Local SEO живёт кейсами с измеримыми цифрами</strong> (map pack share по гридам, звонки GBP) и сходится в одном: map pack и звонки — главное, всё остальное вторично.</li>
+<li><strong>Миграции остаются самым рискованным событием в SEO:</strong> потеря map pack за неделю из-за несогласованных 301 и NAP — повторяющийся сюжет.</li>
+</ol>
+<hr />
+<h2>🏆 Топ-5 полезных постов</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Заголовок</th>
+<th>Сабреддит</th>
+<th>Score</th>
+<th>Почему полезен</th>
+<th>Ссылка на тред</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>I showed my SEO and AI Search workflow on a webinar...</td>
+<td>r/juststart</td>
+<td>н/д (66 комм.)</td>
+<td>Полный воспроизводимый workflow: DataForSEO + Reddit-данные → Claude Code → план страницы; учит не доверять объёмам ключей слепо</td>
+<td><a href="https://www.reddit.com/r/juststart/comments/1xau4k0/i_showed_my_seo_and_ai_search_workflow_on_a/">Тред</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>The unglamorous checklist I run before touching backlinks on a stalled site</td>
+<td>r/juststart</td>
+<td>н/д (43 комм.)</td>
+<td>Бесплатный и обратимый порядок диагностики стагнации: каннибализация → консолидация → crawl depth → только потом ссылки</td>
+<td><a href="https://www.reddit.com/r/juststart/comments/1xehjdi/the_unglamorous_checklist_i_run_before_touching/">Тред</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>My site's index count used to be around 7,000 pages... down to 2,000</td>
+<td>r/bigseo</td>
+<td>н/д (49 комм.)</td>
+<td>Готовый метод диагностики падения индекса через Performance за 16 месяцев + лайфхак с дроблением sitemap</td>
+<td><a href="https://www.reddit.com/r/bigseo/comments/1x6bsv4/my_sites_index_count_used_to_be_around_7000_pages/">Тред</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Getting 200k+ Google impressions but only 0.2% CTR</td>
+<td>r/bigseo</td>
+<td>н/д (33 комм.)</td>
+<td>Самый чёткий разбор CTR-проблемы недели: позиция важнее сниппетов, работать страницы 11–15</td>
+<td><a href="https://www.reddit.com/r/bigseo/comments/1xf4nun/getting_200k_google_impressions_but_only_02_ctr/">Тред</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Orthodontist local SEO case study: 68% → 85% map pack visibility</td>
+<td>r/localseo</td>
+<td>н/д (22 комм.)</td>
+<td>Кейс с методологией и цифрами: замер по 169 точкам, оффер на данных транзакций, рост кликов 2,5x за 3 месяца</td>
+<td><a href="https://www.reddit.com/r/localseo/comments/1xg0mxw/orthodontist_local_seo_case_study_google_maps/">Тред</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Бонус: <a href="https://www.reddit.com/r/juststart/comments/1wbk57r/10_months_of_seoonly_amazon_affiliate_marketing/">10 months of SEO-only Amazon affiliate — €284</a> (60 комм.) — эталон честности: реальные цифры неуспешного проекта и разбор воронки в комментариях.</em></p>
+<hr />
+<h2>⚡ Практические выводы</h2>
+<ol>
+<li><strong>Позиция прежде сниппета.</strong> Если CTR низкий, первым делом смотреть среднюю позицию в GSC: при 0,2% CTR проблема в том, что показы не на первой странице. Рабочая зона — страницы на позициях 11–15; мета-теги имеют смысл только в топ-5.</li>
+<li><strong>Проверяйте механику, а не отчёты.</strong> «410 отправлен» ≠ «410 отдаётся»; краул-скрин 96/100 ≠ здоровый индекс. Экспортируйте исключённые URL в Performance за 16 месяцев — Google сам покажет, какие страницы счёл бесполезными, а дробление sitemap по типам локализует потери.</li>
+<li><strong>Перед тратами на ссылки — бесплатный чеклист:</strong> каннибализация по GSC → слияние дубликатов (выжившего выбирает Google, а не ваш вкус) → crawl depth ≤3 кликов. Ссылки — только для 2–3 страниц, которые уже зарабатывают.</li>
+<li><strong>AI-поиск измеряйте конверсиями, а не трафиком.</strong> Трафик от LLM — доли процента от Google, но конверсия в 2–4 раза выше и лиды предквалифицированы. Бесплатные Grounding/Opportunity Queries в Bing Webmaster — лучший стартовой пункт для GEO; платные AI-трекеры используйте только для трендов, критичные промпты проверяйте вручную.</li>
+<li><strong>В local SEO деньги — в map pack и звонках.</strong> Отчётность стройте вокруг звонков и маршрутов (позиции — лишь доказательство), GeoGrid-мониторинг собирайте на DataForSEO за центы, а миграцию сайта делайте синхронно с проверкой GBP/NAP — иначе рискуете выпасть из карты за неделю.</li>
+</ol></main>
+<footer class="site">Автогенерируется парсером Reddit + LLM · 2026-10-27 05:14</footer>
+</body></html>
