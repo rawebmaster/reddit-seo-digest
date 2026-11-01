@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Дайджест 2026-11-01</title><style>
+:root { --accent: #e74c3c; --bg: #fdfdfb; --fg: #1a1a2e; --muted: #6b7280; --card: #ffffff; }
+* { box-sizing: border-box; }
+body { font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; line-height: 1.7;
+       max-width: 960px; margin: 0 auto; padding: 28px 18px 80px; color: var(--fg); background: var(--bg); }
+header.site { border-bottom: 3px solid var(--accent); padding-bottom: 14px; margin-bottom: 28px; }
+header.site h1 { margin: 0; font-size: 1.7em; }
+header.site h1 a { color: var(--fg); text-decoration: none; }
+header.site .sub { color: var(--muted); font-size: .95em; margin-top: 4px; }
+
+/* ── Карточки на главной ── */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+         gap: 18px; margin-top: 8px; }
+.card { display: flex; flex-direction: column; background: var(--card);
+        border: 1px solid #e5e2dd; border-radius: 12px; padding: 18px;
+        text-decoration: none; color: var(--fg);
+        transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,.08);
+              border-color: var(--accent); }
+.card .date { font-size: 1.15em; font-weight: 700; color: var(--accent); margin-bottom: 6px; }
+.card .title { font-weight: 600; margin-bottom: 8px; line-height: 1.4; }
+.card .snippet { color: var(--muted); font-size: .88em; line-height: 1.55;
+                 display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;
+                 overflow: hidden; margin-bottom: 12px; flex-grow: 1; }
+.card .meta { display: flex; gap: 10px; font-size: .8em; color: var(--muted);
+              border-top: 1px dashed #e5e2dd; padding-top: 10px; }
+.card .meta .pill { background: #f5f0eb; border-radius: 20px; padding: 2px 10px; }
+.card.latest { border-color: var(--accent); box-shadow: 0 4px 14px rgba(231,76,60,.12); }
+.card.latest .date::after { content: " — свежий"; font-size: .75em; font-weight: 400;
+                            color: var(--muted); }
+
+/* ── Страница дайджеста ── */
+h2 { font-size: 1.3em; margin-top: 1.8em; color: #2c3e50;
+     border-left: 4px solid var(--accent); padding-left: 10px; }
+h3 { font-size: 1.08em; color: #34495e; margin-top: 1.4em; }
+table { border-collapse: collapse; width: 100%; font-size: .92em; margin: 12px 0; }
+th, td { border: 1px solid #ddd; padding: 7px 10px; text-align: left; vertical-align: top; }
+th { background: #f5f0eb; }
+blockquote { margin: 12px 0; padding: 8px 16px; background: #f8f5f0;
+             border-left: 4px solid #d4a017; font-style: italic; }
+a { color: #c0392b; }
+hr { border: none; border-top: 1px solid #e0ddd8; margin: 28px 0; }
+code { background: #f0ede8; padding: 1px 5px; border-radius: 3px; font-size: .9em; }
+.backlink { display: inline-block; margin-bottom: 18px; color: var(--muted); }
+footer.site { margin-top: 48px; color: var(--muted); font-size: .85em; }
+</style></head><body>
+<header class="site">
+  <h1><a href="/">📋 SEO-дайджест Reddit</a></h1>
+  <div class="sub">Ежедневное саммари r/SEO · r/bigseo · r/juststart · r/TechSEO · r/localseo и др.</div>
+</header>
+<main><a class="backlink" href="../">← Все дайджесты</a><h1>📋 Дайджест SEO-сабреддитов: r/SEO, r/bigseo, r/juststart, r/SEO_Digital_Marketing, r/TechSEO, r/localseo</h1>
+<p><strong>Дата:</strong> 2026-11-01 05:08<br />
+<strong>Постов:</strong> 60</p>
+<hr />
+<h2>📊 Обзор</h2>
+<p>За период обсуждались 60 постов из шести сабреддитов. Общая тональность — тревожная, но прагматичная. Главная повестка — <strong>эрозия органического трафика из-за AI Overviews</strong>: сразу несколько тредов фиксируют потерю 80–90% кликов при сохранении позиций, а техSEO-сообщество документирует, что Google начал «отравлять» SERP для сторонних трекеров (google.com/goto), из-за чего данные Ahrefs/Semrush перестают отражать реальность. Второй блок — вечные боли: низкий CTR при больших показах, ручные санкции за thin content, потеря позиций после миграции. В локальном SEO — заметный сдвиг от «публикуй статьи» к «публикуй доказательства работы» (видео, фото, отзывы). Отдельный сюжет — кризис доверия между SEO-агентствами и клиентами: два крупных треда о расторжении контрактов и требованиях возврата денег.</p>
+<hr />
+<h2>🔥 Ключевые темы и проблемы</h2>
+<h3>1. AI Overviews «съедают» клики — и теперь ещё скрывают это от инструментов</h3>
+<p><strong>Суть проблемы.</strong> Автор треда о потере трафика (пост 6) описывает классическую «невидимую» потерю: страницы остались в топ-5, проиндексированы, но клики и показы упали на ~90% за ночь (26 октября). Падение произошло не в ранжировании, а в цитировании within AI Overviews — но подтвердить это из GSC напрямую нельзя. Параллельно в r/TechSEO задокументировано (пост 43), что Google с лета маршрутизирует ссылки через <code>google.com/goto?url=&lt;token&gt;</code>, и к 30 октября <strong>58,7% органических результатов</strong> в выборке DataForSEO не содержали реального URL — SERP API физически не могут определить, чей это результат.</p>
+<p><strong>Почему важно.</strong> Сообщество впервые сталкивается с ситуацией, когда нельзя доверять ни GSC (нет разбивки по AI-цитированиям в старом отчёте), ни сторонним трекерам (данные «отравлены»). В r/SEO_Digital_Marketing тред о том, что «свыше 80% поисков имеют AI Overviews», подкрепляет ощущение необратимого сдвига. Тред «AI Overviews are basically legal content theft» (пост 20) передаёт эмоциональную сторону: автор потратил 2 недели на оригинальное исследование с данными, а Google просто суммировал выводы в снапшоте без клика.</p>
+<p><strong>Решения из комментариев.</strong><br />
+- В треде про потерю 90% трафика <strong>Fast_Veterinarian245</strong> (score: 9) подтверждает масштаб: «Volatility is through the roof right now. We lost half of ours but so did all our competitors» — предполагает начало core update. <strong>Main-Feeling-2362</strong> (score: 3) даёт методичный чек-лист: проверить отчёт Generative AI performance в GSC, сравнить страницы/запросы до и после, проверить, показываются ли AI Overviews для ваших запросов вообще.<br />
+- В треде про «кражу контента» <strong>SuperPerformance3322</strong> (score: 1) предлагает делать оригинальные данные незаменимыми: «Share findings that answer the question, but keep detailed analysis, charts, and practical takeaways on your site». <strong>marintkael</strong> (score: 1) советует документировать, цитируют вас или парафразируют: «Cited with a link, you lose clicks, but the study travels with your name on it».<br />
+- В треде про goto-отравление <strong>DrKJING</strong> (автор, score: 1) провёл кросс-проверку пяти SERP API по 8 странам: Serper резолвит только позиции 1–3, Oxylabs теряет 69,4% URL, но сохраняет домен в 99,2% случаев через breadcrumb. Вывод из ветки: «Search Console is the safe reference, since it counts at Google itself».</p>
+<p><strong>Источники:</strong> <code>r/SEO</code> + <a href="https://www.reddit.com/r/SEO/comments/1xjvhx2/lost_90_of_traffic_overnight_after_ai_overview/">Lost ~90% of traffic overnight after AI Overview changes</a>; <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1xd85xs/google_ai_overviews_are_basically_legal_content/">Google AI Overviews are basically legal content theft at this point</a>; <code>r/TechSEO</code> + <a href="https://www.reddit.com/r/TechSEO/comments/1xk4ktz/googlecomgoto_in_my_dataforseo_data_0_of_71531/">google.com/goto in my DataForSEO data</a>; <code>r/TechSEO</code> + <a href="https://www.reddit.com/r/TechSEO/comments/1xjd3ha/google_is_poisoning_search_results_can_you_still/">Google Is Poisoning Search Results!</a>; <code>r/SEO_Digital_Marketing</code> + <a href="https://www.reddit.com/r/SEO_Digital_Marketing/comments/1xgfn1w/over_80_of_google_searches_have_ai_overviews/">Over 80% Of Google Searches Have AI Overviews</a></p>
+<hr />
+<h3>2. GEO vs SEO: битва нарративов с реальными цифрами</h3>
+<p><strong>Суть проблемы.</strong> Тред «Is GEO a Distraction? Marie Haynes vs. Mike King» (пост 39) фиксирует главный идеологический спор индустрии. Marie Haynes на данных 100 сайтов и 145+ млн сессий за 12 месяцев показала: ChatGPT отправил 0,62% трафика от Google organic, все LLM вместе — 0,73%. При этом конверсия из ChatGPT выше (13,8% vs 3,02%), но Google всё равно дал в 27 раз больше конверсий. И главное — referral-трафик из ChatGPT <strong>снижается</strong> после GPT-5. Mike King возражает: AI search — это brand-канал, а не traffic-канал, «как судить рекламу на Супербоуле по CTR».</p>
+<p><strong>Почему важно.</strong> От ответа на этот вопрос зависят бюджеты: если Haynes права, GEO-услуги — переоценённый хайп; если King — агентства, игнорирующие AI-видимость, теряют канал, где 1,2 млрд человек в неделю спрашивают «что купить». Комментарии показывают, что сообщество скептично к обоим: <strong>Defiant_Solid_2945</strong> (score: 3) прямо указывает на конфликт интересов — «Mike King is pushing his narrative because he has an agency that pivoted to GEO services».</p>
+<p><strong>Решения из комментариев.</strong> Лучший комментарий треда — от <strong>ElephantOutside8529</strong> (score: 1): он замечает, что 27x посчитан только по 55 сайтам из 100 (лишь половина трекает конверсии), и предлагает эмпирический тест гипотезы King: «chart branded query impressions in search console against when you started getting cited. If that line doesn't move, the brand channel argument doesn't hold for you». Это единственный конструктивный способ проверить «brand-канал» на своих данных.</p>
+<p><strong>Источник:</strong> <code>r/SEO_Digital_Marketing</code> + <a href="https://www.reddit.com/r/SEO_Digital_Marketing/comments/1xg373c/is_geo_a_distraction_marie_haynes_vs_mike_king/">Is GEO a Distraction? Marie Haynes vs. Mike King (and the Tactics That Work)</a></p>
+<hr />
+<h3>3. Недоверие к сторонним инструментам: Ahrefs/Semrush vs GSC</h3>
+<p><strong>Суть проблемы.</strong> Владелец сайта в r/bigseo (пост 13) видит в GA4/GSC 20–30 тыс. визитов в месяц, а Semrush показывает одну десятую этого, Ahrefs — другой набор ключей, и ни одного ключа в позиции #1. При этом вовлечённость на сайте — 13 секунд на сессию, что заставляет сомневаться в качестве трафика. В r/SEO_Digital_Marketing (пост 40) тот же вопрос на уровне позиций: почему средняя позиция GSC не совпадает с трекерами даже при совпадении страны и устройства.</p>
+<p><strong>Почему важно.</strong> На этих данных строятся отчёты агентств и решения о бюджетах. Если Semrush занижает трафик в 10 раз, клиент может несправедливо обвинить подрядчика — или наоборот, агентство может прятаться за «инструментальным» расхождением.</p>
+<p><strong>Решения из комментариев.</strong><br />
+- <strong>TaxMaleficent7727</strong> (score: 3) ловит методологическую ошибку в самом вопросе: «GSC only counts Google organic clicks, so it can't match a 20-30k figure that includes Direct and Social» — сравнивать нужно канал Organic Search в GA4 отдельно.<br />
+- <strong>Tuilere</strong> (score: 2) рубит с плеча: «SEmrush and ahrefs traffic estimates are for fun. They are made up. The most important metric is revenue. Always».<br />
+- <strong>StretchHamm</strong> (score: 1) добавляет: «Revenue is the one number an agency can't dress up... that 13 second session time is probably the more honest metric here».<br />
+- В треде про позиции <strong>ForwardUpDE</strong> (score: 1) объясняет: выдача индивидуальна (IP, история, локация), трекеры работают снапшотами, GSC — миллионами запросов, расхождение нормально. <strong>The_Answer_Man</strong> (score: 1) радикален: «Stop spending money on estimations» — предлагает строить собственные дашборды через API GSC/GA4 + Claude.<br />
+- В r/TechSEO (пост 50) на вопрос «Ahrefs, Semrush или Moz?» топ-ответ <strong>WaySubstantial573</strong> (score: 16) — одно слово: «Ahrefs». <strong>FirstPlaceSEO</strong> (score: 9) в соседнем треде резюмирует: сторонние инструменты теперь «only good for keyword research and backlink research», а <strong>SoftLikeABear</strong> (score: 3): «This is why you don't track ranking as a KPI».</p>
+<p><strong>Источники:</strong> <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1xigstu/ga4_and_gsc_show_traffic_but_semrush_and_ahrefs/">GA4 and GSC show traffic, but Semrush and Ahrefs report much lower organic traffic</a>; <code>r/SEO_Digital_Marketing</code> + <a href="https://www.reddit.com/r/SEO_Digital_Marketing/comments/1xfpa04/why_do_google_search_console_positions_differ/">Why do Google Search Console positions differ from third-party rank trackers?</a>; <code>r/TechSEO</code> + <a href="https://www.reddit.com/r/TechSEO/comments/1xifm8e/seo_professionals_which_platform_do_you_prefer/">SEO professionals: Which platform do you prefer</a>; <code>r/TechSEO</code> + <a href="https://www.reddit.com/r/TechSEO/comments/1xjd3ha/google_is_poisoning_search_results_can_you_still/">Google Is Poisoning Search Results!</a></p>
+<hr />
+<h3>4. Низкий CTR при больших показах — это проблема позиций, а не заголовков</h3>
+<p><strong>Суть проблемы.</strong> Два треда с почти идентичной картиной: у автора поста 17 — 1,17 млн показов, 7,19 тыс. кликов, CTR 0,6% при средней позиции 9,3; у автора поста 18 — 275 тыс. показов, 600 кликов, CTR 0,2%. Оба пытаются «улучшить CTR» правками заголовков и мета-описаний. Смежный тред (пост 4) — стоит ли подгонять title под «зелёный балл» RankMath.</p>
+<p><strong>Почему важно.</strong> Это самая частая ошибка самообмана в SEO: винить заголовок, когда проблема в том, что страница вообще не на первой странице. Сообщество единодушно бьёт по этому шаблону.</p>
+<p><strong>Решения из комментариев.</strong><br />
+- <strong>Wooden_Bat3252</strong> (score: 5, пост 18): «0.2% on 275k impressions means basically none of those impressions are on page one, so rewriting meta descriptions isn't going to move anything. Check the average position in GSC first, titles only matter once you're in the top 5». <strong>Over-City4367</strong> (score: 2) жёстче: «you're sitting on page 3 somewhere. no meta description fixes that».<br />
+- В посте 17 <strong>Effective_Variety318</strong> (score: 5) даёт развёрнутый план: проверять страницы с низким CTR в GSC, связать блог с магазином внутренними ссылками на продуктовые и категорийные страницы, проверить релевантность бэклинков. <strong>Global_Speaker_5841</strong> (score: 1) добавляет: позиция 9,3 — «you're mostly lurking at the bottom of page one... where nobody clicks», плюс проверить SERP на featured snippets и image packs, которые «съедают» CTR.<br />
+- <strong>StretchHamm</strong> (score: 1) уточняет нюанс: раз Google переписывает title, «better to fix the H1 and the first paragraph since that's usually what Google pulls from when it ignores your title».<br />
+- В треде про title-практику <strong>tvmats</strong> (score: 5) закрывает вопрос RankMath: «Title length isn't really a ranking issue, and words past the ellipsis still get indexed just fine... Write it for clicks and watch CTR per page in search console».</p>
+<p><strong>Источники:</strong> <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1xfo8z7/have_117m_impression_06_ctr_how_can_i_improve_my/">Have 1.17M impression, 0.6 CTR. How can I improve my CTR?</a>; <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1xf4nun/getting_200k_google_impressions_but_only_02_ctr/">Getting 200k+ Google impressions but only 0.2% CTR</a>; <code>r/SEO</code> + <a href="https://www.reddit.com/r/SEO/comments/1xk23to/seo_title_best_practice/">SEO Title - best practice</a></p>
+<hr />
+<h3>5. Миграции, индексация и технические мифы</h3>
+<p><strong>Суть проблемы.</strong> Три сюжета. (а) Автор поста 19 переехал с Weebly на «Articulation» и вылетел из Local Pack, хотя раньше был топ-1–3 по «ag drone applicators» в штате. (б) В r/TechSEO (пост 42) — методология разбора статуса «Crawled - currently not indexed», который все склонны называть «проблемой crawl budget». (в) В r/SEO (пост 1) — разбор статьи Google о том, что 404-ошибки не вредят SEO, с ценным уточнением сообщества. Плюс мелкий, но частый кейс — favicon не показывается в поиске (пост 14).</p>
+<p><strong>Почему важно.</strong> Миграция способна уничтожить локальный бизнес за неделю, а «Crawled - not indexed» — самый частый ложный диагноз в техаудитах: лечат не то.</p>
+<p><strong>Решения из комментариев.</strong><br />
+- По миграции <strong>Ambitious_Reading465</strong> (score: 3) формулирует суть: «The host isn't what dropped you, the migration is. If any URLs changed and the 301s weren't one to one, you lose the equity». <strong>Novel-Breakfast7737</strong> (score: 6) добавляет GMB-слой: «Your GMB profile is probably still pointing to the old Weebly signals... Check the GMB listing first — make sure the website URL is updated and all citations match exactly». <strong>StretchHamm</strong> (score: 1) предупреждает о soft suspension Business Profile при одновременной смене сайта и данных.<br />
+- По «Crawled - not indexed» автор поста 42 даёт порядок отладки: (1) fetch как бот, без JS — возможно, контент появляется только после hydration; (2) diff HTML против проиндексированных страниц того же шаблона — обычно разница в контенте, не в конфиге; (3) глубина от главной — 5 кликов или только из пагинации; (4) логи и sitemaps — в последнюю очередь. Ключевая мысль: «Google crawled it, understood it, and decided it was not worth storing. That is a content and internal-linking problem wearing a technical costume». <strong>rossytzoltan</strong> (score: 1) подтверждает практикой: «It's almost always a) low quality pages and b) poor discovery».<br />
+- По 404 <strong>joshanweb</strong> (score: 7) задаёт правильный вопрос: «Are the 404s from URLs you removed or from internal links still pointing at them?» <strong>ContentWithNathu</strong> (score: 1) раскрывает: внутренние ссылки на 404 «waste crawl budget and send users to a dead end», а в GSC URL Inspection показывает ссылающуюся страницу. Контраргумент скептика <strong>BigGayGinger4</strong> (score: 5): «just because Google says "we don't really care about it" doesn't mean that its 30-year-old algorithm isn't gonna hit dead ends and make quality score decisions that some engineer doesn't know it's making».<br />
+- По favicon <strong>marintkael</strong> (score: 1): «Google only takes the favicon from your homepage, so reindexing the other pages won't change anything» — плюс 48x48 .ico в корне и ожидание нескольких недель из-за медленного кеша.</p>
+<p><strong>Источники:</strong> <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1xdjd4r/hard_decline_in_google_rating_after_switching_to/">Hard decline in google rating after switching to Articulation</a>; <code>r/TechSEO</code> + <a href="https://www.reddit.com/r/TechSEO/comments/1xkj49m/crawled_currently_not_indexed_is_usually_not_a/">"Crawled - currently not indexed" is usually not a crawl budget problem</a>; <code>r/SEO</code> + <a href="https://www.reddit.com/r/SEO/comments/1xhv1fj/google_explains_why_404_errors_arent_scary_or_bad/">Google Explains Why 404 Errors Aren't Scary</a>; <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1xib94z/google_search_console_favicon_issue/">Google search console favicon issue</a></p>
+<hr />
+<h3>6. Ручные санкции: почему Google отклоняет reconsideration six раз</h3>
+<p><strong>Суть проблемы.</strong> Сайт получил Manual Action «Thin content with little or no added value» в августе. За полгода — 6 отклонённых reconsideration requests. Авторы удалили все SEO-страницы, оставили продуктовые и гайды, потом переписали «несколько полезных статей» — и снова отказ. В ветке автор уточняет: в GSC ~2000 проиндексированных страниц, но по <code>site:domain</code> видно ~10, причём не лучшие — похоже на подавление.</p>
+<p><strong>Почему важно.</strong> Это показательный кейс: удаление плохих страниц ≠ демонстрация ценности оставшихся. Сообщество сходится, что reviewer видит ту же первопричину на каждой проверке.</p>
+<p><strong>Решения из комментариев.</strong> Ключевой ответ — <strong>Novel-Breakfast7737</strong> (score: 9): «6 rejections usually means the reviewers are seeing the same underlying issue each time... product pages with just specs and a buy button won't cut it». Рецепт: полный контент-аудит всего проиндексированного, уникальные описания, сравнения, сценарии использования, «actual helpful info that no one else has», и только потом повторная подача с чётким списком изменений. Из ветки видно, что авторы недооценили масштаб: 2000 страниц «остатка» — это не «очистка», а тот же thin content другим фасоном.</p>
+<p><strong>Источник:</strong> <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1xjj5tv/google_has_rejected_our_reconsideration_requests/">Google has rejected our reconsideration requests 6 times</a></p>
+<hr />
+<h3>7. Локальное SEO: доказательства вместо обещаний + конфликт агентств и клиентов</h3>
+<p><strong>Суть проблемы.</strong> Три сюжета. (а) Кейс (пост 52): вместо «ждите 3–6 месяцев» SEO-специалист запустил video-first подход — ежедневные Shorts из фото/отзывов завершённых работ на YouTube Shorts и Google Business Profile — и получил +30% закрытых заявок за 30 дней (92 → 120). (б) Дилемма масштабирования (пост 57): 30 однотипных city-страниц или 5 страниц с реальными проектами, фото и деталями. (в) Кейс «1.5-mile cliff» (пост 58): сантехник №1 на карте у своего адреса, но 14+ позиция в двух кварталах — и ноль упоминаний в ChatGPT/Claude/Gemini, которые «галлюцинируют» старых конкурентов со структурными цитатами. На фоне — треды о расторжении контрактов: SEO-специалиста агентства винит CEO в потере клиента (пост 5), а locksmith требует частичный возврат после 6 месяцев без лидов (пост 53).</p>
+<p><strong>Почему важно.</strong> Локальный SEO — сегмент, где AI-поиск бьёт сильнее всего: LLM рекомендуют тех, у кого есть цитаты в старых директориях, а не тех, у кого лучший сайт. Одновременно растёт недоверие к агентствам: клиент платит 6 месяцев, получает «отчёты» вместо лидов — и сообщество раскалывается, справедлив ли возврат.</p>
+<p><strong>Решения из комментариев.</strong><br />
+- По city-страницам <strong>cnomo</strong> (score: 2) иронично переворачивает вопрос автора: «Would you rather post one, helpful, useful, and insightful thing to Reddit or a sea of agency engagement slop?» <strong>Past_Desk1060</strong> (score: 1) подтверждает: «Quality local pages with real projects and customer proof will always be more valuable than dozens of repetitive city pages».<br />
+- По планам на 2027 (пост 60) <strong>BrancaccioAliya</strong> (score: 2) даёт приоритет: «off-page signals and review velocity with specific service keywords probably matter even more than on-page tweaks right now... getting clients to mention the exact service in their reviews does a lot of heavy lifting». <strong>insiyacycle</strong> (score: 2) добавляет: «Clear pricing, real examples and answers to common questions can make a bigger difference than publishing another generic blog post».<br />
+- По конфликту агентства и клиента (пост 5) топ-комментарий <strong>Playful_Boot_6223</strong> (score: 73): «just get over it and move on. your agency boss didn't even defend you and are in fact blaming you for it». <strong>Routine-Meeting-1870</strong> (score: 14) добавляет суть: «traffic up 20% in a month is decent, but if the site's a mess and nobody's converting that's a whole different problem they probably ignored when selling the client. 60% bounce rate isn't something you fix with meta tags».<br />
+- По возврату (пост 53) <strong>anggora</strong> (score: 5) защищает агентство: «They did the work and showed that to you. SEO results are not guaranteed», но <strong>zeGenicus</strong> парирует: «I bet they just made blog posts with AI all day and called it an increase but none of the traffic was towards lead generation pages».</p>
+<p><strong>Источники:</strong> <code>r/localseo</code> + <a href="https://www.reddit.com/r/localseo/comments/1xkiade/how_turning_completed_service_jobs_into_daily/">How Turning Completed Service Jobs Into Daily Video Shorts Drove a 30% Jump</a>; <code>r/localseo</code> + <a href="https://www.reddit.com/r/localseo/comments/1xk614t/30_city_pages_or_5_pages_with_actual_local_jobs/">30 city pages or 5 pages with actual local jobs?</a>; <code>r/localseo</code> + <a href="https://www.reddit.com/r/localseo/comments/1xkgutg/case_study_why_this_plumbing_client_ranked_1_at/">Case study: Why this plumbing client ranked #1 at their front door but vanished 1.5 miles out</a>; <code>r/localseo</code> + <a href="https://www.reddit.com/r/localseo/comments/1xjoasa/what_are_you_changing_in_your_seo_plans_for_2027/">What are you changing in your SEO plans for 2027</a>; <code>r/SEO</code> + <a href="https://www.reddit.com/r/SEO/comments/1xjqus3/client_fired_my_agency_because_no_leads_from_seo/">Client fired my agency because no leads from SEO</a>; <code>r/localseo</code> + <a href="https://www.reddit.com/r/localseo/comments/1xkiu3i/is_it_fair_to_ask_seo_agency_for_a_partial_refund/">Is it fair to ask SEO agency for a partial refund?</a></p>
+<hr />
+<h2>💡 Интересные решения и советы</h2>
+<h3>1. Workflow планирования страницы через Claude Code: объём поиска + Reddit-мининг</h3>
+<p><strong>Саммари решения.</strong> Перед написанием страницы автор собирает два слоя данных скриптами, которые написал Claude Code. Слой 1 — объёмы из DataForSEO: на примере «Spider-Man: Brand New Day» общий ключ дал 201 000 запросов/мес, а «...review» — всего 90, хотя ревью-контент востребован. Слой 2 — парсинг топ-комментариев из восьми профильных сабреддитов за месяц (48 постов, ~200 комментариев), который выдаёт реальные вопросы аудитории, которые невозможно угадать по keyword-инструментам (например, «достаточно ли экранного времени у MJ и Ned» — отдельная секция статьи). Финальный шаг — «verified data table», защищающая от публикации уверенной чуши.<br />
+- <strong>Кто предложил:</strong> автор поста; дополнение от <strong>Strong_Teaching8548</strong> — не останавливаться на самом объёмном ключе, идти за «малыми решающими запросами» вида «x vs y», «is x worth it».<br />
+- <strong>Источник:</strong> <code>r/juststart</code> + <a href="https://www.reddit.com/r/juststart/comments/1xau4k0/i_showed_my_seo_and_ai_search_workflow_on_a/">I showed my SEO and AI Search workflow on a webinar</a> — цитата: «The comments also gave me questions I'd never have guessed».</p>
+<h3>2. GSC-проверка перед ускорением публикации: индексация как индикатор качества</h3>
+<p><strong>Саммари решения.</strong> Прежде чем решать, «сколько страниц в день можно публиковать», откройте Pages report в GSC и посмотрите долю проиндексированных <strong>основных</strong> страниц (игнорируя теги, фильтры и каноникализированное). 10–20% неиндексированных — норма; если неиндексировано большинство — Google считает сайт низкокачественным, и публиковать новое нельзя: сначала аудит, консолидация и правка внутренних ссылок. Радикальный вариант для новых сайтов, масштабировавшихся без авторитета: автор фиксирует, что такие сайты «have a really hard time proving to Google they're not spam» и иногда дешевле стартовать на новом домене.<br />
+- <strong>Кто предложил:</strong> автор поста; дополнение <strong>IceReasonable6968</strong> — сплитить Pages report по локалям, чтобы hreflang-«сиблинги» не портили картину.<br />
+- <strong>Источник:</strong> <code>r/juststart</code> + <a href="https://www.reddit.com/r/juststart/comments/1wa2vd1/how_fast_is_too_fast_to_publish_content_on_your/">How fast is too fast to publish content on your website?</a> — цитата: «If it's the majority, Google thinks your site is low quality... I wouldn't publish anything new yet».</p>
+<h3>3. Диагностика внезапного скачка трафика: Discover маскируется под поиск</h3>
+<p><strong>Саммари решения.</strong> Когда статья внезапно получает 2,3K трафика и через 3–4 дня теряет его, первым делом проверьте, не Google Discover ли это: в GA4 Discover-трафик смешивается с organic, и это выглядит как «падение позиций», хотя ранжирование не менялось. В GSC у Discover отдельный performance-отчёт. Если это был Discover — вина не на сайте, Google сам называет этот трафик «supplemental and less predictable». Если это был Search — смотрите вкладку queries: возможно, отработал один трендовый запрос, и нужно публиковать продолжения, пока тема горячая.<br />
+- <strong>Кто предложил:</strong> <strong>keyworddotcom</strong> (основной разбор); дополнение <strong>StretchHamm</strong> — для следующего захода в Discover включить <code>max-image-preview:large</code> и featured image от 1200px.<br />
+- <strong>Источник:</strong> <code>r/bigseo</code> + <a href="https://www.reddit.com/r/bigseo/comments/1xhko3s/sudden_traffic_rise_sudden_traffic_drop/">Sudden Traffic Rise &amp; Sudden Traffic Drop</a> — цитата: «a spike that dies in 3 or 4 days may have come from Google Discover and not search rankings».</p>
+<h3>4. CTA для «чувствительных» ниш: диапазоны вместо точных цифр</h3>
+<p><strong>Саммари решения.</strong> Для CPA-фирмы, требующей на форме чувствительные данные (выручку клиента), автор предложил заменить прямое поле на запись звонка с NDA. <strong>SEOPub</strong> предложил более простую альтернативу: оставить вопрос о выручке, но заменить ввод числа выбором диапазона ($50–100k / $100–250k / $250–500k / $500–1M / $1M+) — «People are faster to pick from a range than enter their estimated revenue». Дополнительно от <strong>reggeabwoy</strong>: спрашивать размер компании/число сотрудников как прокси.<br />
+- <strong>Кто предложил:</strong> <strong>SEOPub</strong> (score: 2).<br />
+- <strong>Источник:</strong> <code>r/SEO</code> + <a href="https://www.reddit.com/r/SEO/comments/1xkd451/what_is_the_perfect_cta_for_cpa_firms/">What is the perfect CTA for CPA Firms??</a> — цитата: «People are faster to pick from a range than enter their estimated revenue».</p>
+<h3>5. Тест гипотезы «AI search = brand channel» на своих данных</h3>
+<p><strong>Саммари решения.</strong> Вместо того чтобы спорить, работает ли GEO как brand-канал, постройте простой тест: постройте график показов по брендовым запросам в GSC относительно даты, когда ваш сайт начали цитировать в AI-ответах. Если линия не сдвинулась — аргумент «это brand-канал» не работает для вашего сайта. Плюс поправка к данным Haynes: 27x по конверсиям посчитан лишь на половине выборки (55 из 100 сайтов трекали конверсии), и GA4 не видит сценарий «прочитал ответ в ChatGPT → загуглил бренд» — он падает в branded organic.<br />
+- <strong>Кто предложил:</strong> <strong>ElephantOutside8529</strong>.<br />
+- <strong>Источник:</strong> <code>r/SEO_Digital_Marketing</code> + <a href="https://www.reddit.com/r/SEO_Digital_Marketing/comments/1xg373c/is_geo_a_distraction_marie_haynes_vs_mike_king/">Is GEO a Distraction? Marie Haynes vs. Mike King</a> — цитата: «chart branded query impressions in search console against when you started getting cited».</p>
+<h3>6. Разбор «Crawled - currently not indexed» в правильном порядке</h3>
+<p><strong>Саммари решения.</strong> Порядок отладки: (1) получить HTML так, как его видит бот, без JS — если контент появляется только после hydration, страница стоит в render-очереди; (2) сравнить HTML с 2–3 проиндексированными страницами того же шаблона — обычно разница в контенте (near-duplicate boilerplate, тонкие вариации); (3) проверить глубину от главной — 5 кликов или только из пагинации; (4) только потом логи, sitemaps, статус-коды. На сайтах до нескольких сотен тысяч URL crawl budget почти никогда не является причиной.<br />
+- <strong>Кто предложил:</strong> автор поста (u/ из r/TechSEO); подтверждение <strong>rossytzoltan</strong>: «It's almost always a) low quality pages and b) poor discovery».<br />
+- <strong>Источник:</strong> <code>r/TechSEO</code> + <a href="https://www.reddit.com/r/TechSEO/comments/1xkj49m/crawled_currently_not_indexed_is_usually_not_a/">"Crawled - currently not indexed" is usually not a crawl budget problem</a> — цитата: «a content and internal-linking problem wearing a technical costume».</p>
+<h3>7. Video-first локальный поиск: ежедневные Shorts из завершённых работ</h3>
+<p><strong>Саммари решения.</strong> Вместо ожидания 3–6 месяцев до результатов SEO — публиковать ежедневные короткие видео из реальных фото и отзывов завершённых работ на YouTube Shorts и в Google Business Profile. Логика: high-intent домовладельцы ищут и смотрят на YouTube; увидев свежее доказательство работы в своём районе, они знают, кому звонить. Результат за 30 дней: +30% закрытых заявок (92 → 120) без сайта вообще.<br />
+- <strong>Кто предложил:</strong> автор поста; поддержка <strong>TheBigMiq</strong>: «Smart — I like the unconventional approach here».<br />
+- <strong>Источник:</strong> <code>r/localseo</code> + <a href="https://www.reddit.com/r/localseo/comments/1xkiade/how_turning_completed_service_jobs_into_daily/">How Turning Completed Service Jobs Into Daily Video Shorts Drove a 30% Jump</a> — цитата: «Publish proof and let customers know who to call».</p>
+<h3>8. llms.txt — стандарт, который никто не блокирует и никто не проверял</h3>
+<p><strong>Саммари решения.</strong> Автор проверил robots.txt и llms.txt на 118 сайтах AEO-вендоров (тех, кто продаёт «AI-видимость»). Результат: 116/118 отдают robots.txt, 64/118 — llms.txt, но ни один AI-краулер (OpenAI, Anthropic, Perplexity, Google-Extended, CCBot, Bytespider и др.) не заблокирован более чем одним сайтом. Вывод: индустрия, продающая защиту/оптимизацию от AI-краулеров, сама открыта им настежь, а польза llms.txt для цитирований не подтверждена ни одним источником.<br />
+- <strong>Кто предложил:</strong> автор поста (исследование); жёсткое резюме от <strong>Dreams-Visions</strong> (score: 6): «It's not a thing and has never been more than a proposal... it currently won't and likely never will help».<br />
+- <strong>Источник:</strong> <code>r/TechSEO</code> + <a href="https://www.reddit.com/r/TechSEO/comments/1xjqp77/i_checked_robotstxt_and_llmstxt_on_118_aeo_vendor/">I checked robots.txt and llms.txt on 118 AEO vendor sites</a> — цитата: «about half ships llms.txt even though I couldn't find a source showing it changes citations».</p>
+<hr />
+<h2>💬 Лучшие комментарии тредов</h2>
+<blockquote>
+<p>«just get over it and move on. your agency boss didn't even defend you and are in fact blaming you for it. i wouldn't wanna work with such as a person again»</p>
+</blockquote>
+<p>— <strong>Playful_Boot_6223</strong>, score: 73, в треде <a href="https://www.reddit.com/r/SEO/comments/1xjqus3/client_fired_my_agency_because_no_leads_from_seo/">Client fired my agency because no leads from SEO</a></p>
+<blockquote>
+<p>«I'm all for gating on quality rather than type of post. Got a site you're hyping? Timestamped metrics and live URL... Be helpful or STFU/GTFO. Zero-tolerance ban for rule breakers.»</p>
+</blockquote>
+<p>— <strong>GWBrooks</strong>, score: 24, в треде <a href="https://www.reddit.com/r/juststart/comments/1wk4kqe/what_should_we_do_with_rjuststart/">What should we do with r/juststart?</a></p>
+<blockquote>
+<p>«In what world is a 404 a better experience than a mobile view in a desktop viewport?»</p>
+</blockquote>
+<p>— <strong>mstater</strong>, score: 20, в треде <a href="https://www.reddit.com/r/bigseo/comments/1xgwboy/should_we_go_live_with_only_mobile_version_of_web/">Should we go live with only mobile version of web pages?</a></p>
+<blockquote>
+<p>«Ahrefs»</p>
+</blockquote>
+<p>— <strong>WaySubstantial573</strong>, score: 16, в треде <a href="https://www.reddit.com/r/TechSEO/comments/1xifm8e/seo_professionals_which_platform_do_you_prefer/">SEO professionals: Which platform do you prefer - Semrush, Ahrefs or Moz?</a></p>
+<blockquote>
+<p>«6 rejections usually means the reviewers are seeing the same underlying issue each time... product pages with just specs and a buy button won't cut it.»</p>
+</blockquote>
+<p>— <strong>Novel-Breakfast7737</strong>, score: 9, в треде <a href="https://www.reddit.com/r/bigseo/comments/1xjj5tv/google_has_rejected_our_reconsideration_requests/">Google has rejected our reconsideration requests 6 times</a></p>
+<blockquote>
+<p>«Volatility is through the roof right now. We lost half of ours but so did all our competitors it seems like the core update may be starting that everyone's been predicting.»</p>
+</blockquote>
+<p>— <strong>Fast_Veterinarian245</strong>, score: 9, в треде <a href="https://www.reddit.com/r/SEO/comments/1xjvhx2/lost_90_of_traffic_overnight_after_ai_overview/">Lost ~90% of traffic overnight after AI Overview changes</a></p>
+<blockquote>
+<p>«This is actually quite well known, documented and reported. It's why you go to google search console for the source of truth.»</p>
+</blockquote>
+<p>— <strong>FirstPlaceSEO</strong>, score: 9, в треде <a href="https://www.reddit.com/r/TechSEO/comments/1xjd3ha/google_is_poisoning_search_results_can_you_still/">Google Is Poisoning Search Results! Can You Still Trust Your SEO Rankings?</a></p>
+<blockquote>
+<p>«Well if considering that on average 252k new websites are launched each day. Your odds of solving this last week was a lot easier than this week. But fear not, 385k babies are born each day, however they are probably all going to be vibe coders with 10 sites each by age 8.»</p>
+</blockquote>
+<p>— <strong>Jellyfishr</strong>, score: 8, в треде <a href="https://www.reddit.com/r/juststart/comments/1wledx6/every_project_i_build_dies_at_the_same_step_what/">Every project I build dies at the same step, what should i do?</a></p>
+<blockquote>
+<p>«yeah but still, if your website is roughly equivalent to your store/office/etc — do you just leave empty hallways trailing off to dead ends?... just because google says "we dont really care about it" doesn't mean that its 30-year-old algorithm isn't gonna hit dead ends»</p>
+</blockquote>
+<p>— <strong>BigGayGinger4</strong>, score: 5, в треде <a href="https://www.reddit.com/r/SEO/comments/1xhv1fj/google_explains_why_404_errors_arent_scary_or_bad/">Google Explains Why 404 Errors Aren't Scary or "bad" for SEO</a></p>
+<blockquote>
+<p>«Don't chop it just to turn the plugin score green. Title length isn't really a ranking issue, and words past the ellipsis still get indexed just fine... Write it for clicks and watch CTR per page in search console»</p>
+</blockquote>
+<p>— <strong>tvmats</strong>, score: 5, в треде <a href="https://www.reddit.com/r/SEO/comments/1xk23to/seo_title_best_practice/">SEO Title - best practice</a></p>
+<blockquote>
+<p>«0.2% on 275k impressions means basically none of those impressions are on page one, so rewriting meta descriptions isn't going to move anything. Check the average position in GSC first, titles only matter once you're in the top 5.»</p>
+</blockquote>
+<p>— <strong>Wooden_Bat3252</strong>, score: 5, в треде <a href="https://www.reddit.com/r/bigseo/comments/1xf4nun/getting_200k_google_impressions_but_only_02_ctr/">Getting 200k+ Google impressions but only 0.2% CTR</a></p>
+<blockquote>
+<p>«Yes, we know. It's not a thing and has never been more than a proposal. It's not gonna hurt anything but it currently won't and likely never will help.»</p>
+</blockquote>
+<p>— <strong>Dreams-Visions</strong>, score: 6, в треде <a href="https://www.reddit.com/r/TechSEO/comments/1xjqp77/i_checked_robotstxt_and_llmstxt_on_118_aeo_vendor/">I checked robots.txt and llms.txt on 118 AEO vendor sites</a></p>
+<hr />
+<h2>📈 Тренды и наблюдения</h2>
+<ol>
+<li>
+<p><strong>AI Overviews перешли из «новой фичи» в системную угрозу.</strong> Данные из тредов складываются в картину: 80%+ поисков показывают AI Overviews, цитирование в них нестабильно (минус 90% кликов за ночь), а Google параллельно «отравляет» SERP для API-провайдеров. Сообщество сдвигается от «как ранжироваться» к «как измерять то, что осталось».</p>
+</li>
+<li>
+<p><strong>GSC — единственный источник правды, сторонние инструменты — для research.</strong> Консенсус r/TechSEO: трекеры годятся для подбора ключей и бэклинков, но не для отчётности. Растёт движение «строй свой дашборд на API GSC/GA4 + LLM» вместо покупки оценок трафика.</p>
+</li>
+<li>
+<p><strong>GEO-дебаты поляризовались по линии интересов.</strong> Данные Haynes (0,73% трафика от всех LLM) против нарратива King («brand-канал»). Сообщество требует не мнений, а тестов на своих данных — и само предлагает методику (branded impressions vs даты цитирования).</p>
+</li>
+<li>
+<p><strong>llms.txt и «AI-оптимизация» — рынок опережает технологию.</strong> Исследование 118 AEO-вендоров показало: продавцы AI-видимости сами не блокируют AI-краулеров и используют стандарт, чья эффективность не подтверждена. Классический признак пузыря в нише.</p>
+</li>
+<li>
+<p><strong>Локальный бизнес уходит в «доказательства», а не в контент.</strong> Видео с объектов, фото работ, отзывы с точным названием услуги, NAP-консистентность — вместо городских страниц-клонов. Кейс +30% заявок за 30 дней через Shorts/GBP задал тон дискуссии.</p>
+</li>
+<li>
+<p><strong>Кризис доверия агентство–клиент обостряется.</strong> Два крупных треда (88 и 47 комментариев) о расторжении контрактов. Формулируется новый стандарт ожиданий: «traffic up 20%» не является результатом, если нет лидов; «60% bounce rate isn't something you fix with meta tags».</p>
+</li>
+<li>
+<p><strong>Мета-тренд r/juststart: борьба за идентичность.</strong> Сабреддит обсуждает, как отфильтровать «vibe-coded» спам: предложение GWBrooks — гейт на качество (timestamped metrics + live URL для любых претензий) вместо гейта на тип контента.</p>
+</li>
+</ol>
+<hr />
+<h2>🏆 Топ-5 полезных постов</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Заголовок</th>
+<th>Сабреддит</th>
+<th>Score</th>
+<th>Почему полезен</th>
+<th>Ссылка на тред</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>"Crawled - currently not indexed" is usually not a crawl budget problem. The order I debug it in</td>
+<td>r/TechSEO</td>
+<td>— (10 комм.)</td>
+<td>Разворачивает самый частый ложный диагноз техаудита: пошаговый порядок отладки (fetch как бот → diff HTML → глубина ссылок → логи) с объяснением, что это контент-проблема в техническом костюме</td>
+<td><a href="https://www.reddit.com/r/TechSEO/comments/1xkj49m/crawled_currently_not_indexed_is_usually_not_a/">Тред</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>I showed my SEO and AI Search workflow on a webinar... here's the whole thing</td>
+<td>r/juststart</td>
+<td>— (115 комм.)</td>
+<td>Полностью воспроизводимый workflow: DataForSEO для объёмов + парсинг Reddit для реальных вопросов аудитории + verified data table. Показывает, почему keyword-инструменты врут про интент («review» = 90 запросов/мес при 2700+ апвоутах)</td>
+<td><a href="https://www.reddit.com/r/juststart/comments/1xau4k0/i_showed_my_seo_and_ai_search_workflow_on_a/">Тред</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>google.com/goto in my DataForSEO data: 0 → 58.7% за две недели + workaround</td>
+<td>r/TechSEO</td>
+<td>— (10 комм.)</td>
+<td>Единственное в выборке количественное исследование «отравления» SERP: таблица по датам, кросс-тест 5 SERP API по 8 странам, вывод о GSC как единственном источнике правды для отчётности</td>
+<td><a href="https://www.reddit.com/r/TechSEO/comments/1xk4ktz/googlecomgoto_in_my_dataforseo_data_0_of_71531/">Тред</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>How fast is too fast to publish content? The Search Console check</td>
+<td>r/juststart</td>
+<td>— (15 комм.)</td>
+<td>Простая операционализация «скорости публикации» через долю проиндексированных основных страниц в GSC: 10–20% неиндексированных — норма, больше — стоп публикации и аудит. Включает радикальный сценарий «стартовать на новом домене»</td>
+<td><a href="https://www.reddit.com/r/juststart/comments/1wa2vd1/how_fast_is_too_fast_to_publish_content_on_your/">Тред</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Is GEO a Distraction? Marie Haynes vs. Mike King (and the Tactics That Work)</td>
+<td>r/SEO_Digital_Marketing</td>
+<td>— (5 комм.)</td>
+<td>Редкий случай, когда GEO-дебаты подкреплены данными (100 сайтов, 145 млн сессий, 0,73% трафика от LLM) плюс методика самопроверки гипотезы «AI = brand channel» через branded impressions в GSC</td>
+<td><a href="https://www.reddit.com/r/SEO_Digital_Marketing/comments/1xg373c/is_geo_a_distraction_marie_haynes_vs_mike_king/">Тред</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Бонусом: <a href="https://www.reddit.com/r/localseo/comments/1xkiade/how_turning_completed_service_jobs_into_daily/">How Turning Completed Service Jobs Into Daily Video Shorts</a> (r/localseo) — лучший практический кейс выборки: +30% закрытых заявок за 30 дней без сайта.</em></p>
+<hr />
+<h2>⚡ Практические выводы</h2>
+<ol>
+<li>
+<p><strong>Переведите отчётность на GSC, а не на трекеры.</strong> С учётом google.com/goto и нестабильных оценок Semrush/Ahrefs (расхождения до 10x) сторонние инструменты годятся для research, но не для KPI. Метрика истины — revenue и данные из GSC: «Revenue is the one number an agency can't dress up».</p>
+</li>
+<li>
+<p><strong>Низкий CTR — сначала проверьте позицию, потом заголовок.</strong> CTR 0,2–0,6% при сотнях тысяч показов почти всегда означает «страницы не на первой странице». Заголовки правьте только в топ-5; если Google переписывает title — чините H1 и первый абзац.</p>
+</li>
+<li>
+<p><strong>Перед публикацией новых страниц проверьте индексацию существующих.</strong> Если большинство основных страниц в GSC «Crawled - currently not indexed» — стоп публиковать, сначала аудит и консолидация. Масштабирование контента без авторитета надолго «пачкает» домен.</p>
+</li>
+<li>
+<p><strong>Для локального бизнеса инвестируйте в доказательства, а не в статьи.</strong> Ежедневные Shorts с реальных объектов, фото работ, отзывы с точным названием услуги, NAP-консистентность и GBP дают конверсию быстрее, чем городские страницы-клоны. Проверьте, как вас видят LLM: если ChatGPT «галлюцинирует» конкурентов со старыми цитатами — у вас проблема в директориях, а не в сайте.</p>
+</li>
+<li>
+<p><strong>Фиксируйте всё при работе с AI-цитированиями.</strong> Если трафик упал, а позиции на месте — проверьте отчёт Generative AI в GSC, сравните страницы/запросы до-после и сделайте скриншоты: цитируют вас или парафразируют без ссылки. Это единственный способ отличить «потерю цитирования» от «начала core update» — и единственная доказательная база для разговора с клиентом.</p>
+</li>
+</ol></main>
+<footer class="site">Автогенерируется парсером Reddit + LLM · 2026-11-01 05:08</footer>
+</body></html>
